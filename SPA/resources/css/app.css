@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-primary {
+    color: #F9A392;
+}
+
+.btn-primary {
+    background-color: #F9A392;
+    border-color: #F9A392;
+}
+
+.btn-primary:hover {
+    background-color: #f7846e;
+    border-color: #f67a62;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .btn-primary i {
+    color: #FFFFFF !important;
+}
+
+
+.swiper-pagination-bullet {
+    width: 25px; /* Chiều rộng của dấu phân trang */
+    height: 25px; /* Chiều cao của dấu phân trang */
+    background-color: transparent; /* Màu nền */
+    border: 1px solid white;
+    opacity: 1;
+    border-radius: 0; /* Đặt border-radius về 0 để có hình vuông */
+}
+
+/* Tùy chỉnh dấu phân trang đang hoạt động */
+.swiper-pagination-bullet-active {
+    width: 50px; /* Chiều rộng của dấu phân trang */
+    background-color: white; /* Màu nền khi đang hoạt động */
+}
