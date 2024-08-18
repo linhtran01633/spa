@@ -38,6 +38,12 @@
             ]
         ];
     @endphp
+    <div class="row mx-0 justify-content-center text-center">
+        <div class="col-lg-6">
+            {{-- bg-light  --}}
+            <h1 class="text-4xl blocktext-primary uppercase py-2 px-4">CÁC DỊCH VỤ</h1>
+        </div>
+    </div>
 
     <div class="owl-carousel service-carousel">
         @foreach ($list_services as $item)

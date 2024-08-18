@@ -31,7 +31,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body class="bg-body">
     <!-- Topbar Start -->
     <div class="container-fluid bg-light d-none d-lg-block">
         <div class="row py-2 px-lg-5">
@@ -66,7 +66,7 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <nav class="w-full bg-white py-3 py-lg-0 px-lg-5 flex items-center justify-between">
+    <nav class="w-full py-3 py-lg-0 px-lg-5 flex items-center justify-between">
         <div class="flex items-center">
             <button type="button" class="flex items-center text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
@@ -77,7 +77,7 @@
             <span class="text-base">MENU</span>
         </div>
         <div>
-            <a href="index.html" class="navbar-brand ml-lg-3">
+            <a href="/" class="navbar-brand ml-lg-3">
                 <div class="w-28">
                     <img src="/images/logo.jpg" class="w-full" style="aspect-ratio:6/4">
                 </div>
@@ -103,145 +103,29 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-6">
-                    <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">About Us</h6>
-                    <h1 class="mb-4">Your Best Spa, Beauty & Skin Care Center</h1>
-                    <p class="pl-4 border-left border-primary">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd erat duo eos et erat</p>
-                    <div class="row pt-3">
-                        <div class="col-6">
-                            <div class="bg-light text-center p-4">
-                                <h3 class="display-4 text-primary" data-toggle="counter-up">99</h3>
-                                <h6 class="text-uppercase">Spa Specialist</h6>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="bg-light text-center p-4">
-                                <h3 class="display-4 text-primary" data-toggle="counter-up">999</h3>
-                                <h6 class="text-uppercase">Happy Clients</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="w-full py-5">
+        @include('/home_about_us')
     </div>
-
     <!-- About End -->
 
 
     <!-- Service Start -->
     <div class="container-fluid px-0 py-5 my-5">
-        <div class="row mx-0 justify-content-center text-center">
-            <div class="col-lg-6">
-                <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Our Service</h6>
-                <h1>Kokoro Services</h1>
-            </div>
-        </div>
-
-        @include('/service_slide')
+        @include('service_slide')
     </div>
     <!-- Service End -->
 
 
     <!-- Open Hours Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/opening.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="hours-text bg-light p-4 p-lg-5 my-lg-5">
-                        <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">Open Hours</h6>
-                        <h1 class="mb-4">Best Relax And Spa Zone</h1>
-                        <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
-                        <ul class="list-inline">
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Mon – Fri : 9:00 AM - 7:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 9:00 AM - 6:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : Closed</li>
-                        </ul>
-                        <a href="" class="btn btn-primary mt-2">Book Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('home_open_house')
     </div>
     <!-- Open Hours End -->
 
 
     <!-- Pricing Start -->
     <div class="container-fluid bg-pricing" style="margin: 90px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/pricing.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-7 pt-5 pb-lg-5">
-                    <div class="pricing-text bg-light p-4 p-lg-5 my-lg-5">
-                        <div class="owl-carousel pricing-carousel">
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('home_pricing')
     </div>
     <!-- Pricing End -->
 
@@ -332,52 +216,7 @@
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100" src="img/testimonial.jpg" alt="">
-                </div>
-                <div class="col-lg-6">
-                    <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">Testimonial</h6>
-                    <h1 class="mb-4">What Our Clients Say!</h1>
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="position-relative">
-                            <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
-                                <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam  sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
-                        </div>
-                        <div class="position-relative">
-                            <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="">
-                                <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam  sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
-                        </div>
-                        <div class="position-relative">
-                            <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" alt="">
-                                <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam  sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('home_feedback')
     </div>
     <!-- Testimonial End -->
 

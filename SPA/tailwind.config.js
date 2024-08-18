@@ -12,6 +12,8 @@ export default {
         colors: {
             'button': '#953326',
             'dark': '#211E1C',
+            'primary': '#F9A392',
+            'body' : '#fff7e6',
         },
     },
 },
