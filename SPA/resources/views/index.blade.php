@@ -26,9 +26,69 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .bg-button {
+            background-color: #953326;
+        }
+        .text-primary {
+            color: #F9A392;
+        }
+
+        .btn-primary {
+            background-color: #F9A392;
+            border-color: #F9A392;
+        }
+
+        .btn-primary:hover {
+            background-color: #f7846e;
+            border-color: #f67a62;
+        }
+
+        .btn {
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .btn-lg-square {
+            width: 46px;
+            height: 46px;
+        }
+
+        .btn-square,
+        .btn-sm-square,
+        .btn-lg-square {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer .btn-primary i {
+            color: #FFFFFF !important;
+        }
 
 
-    @vite('resources/css/app.css')
+        .swiper-pagination-bullet {
+            width: 25px; /* Chiều rộng của dấu phân trang */
+            height: 25px; /* Chiều cao của dấu phân trang */
+            background-color: transparent; /* Màu nền */
+            border: 1px solid white;
+            opacity: 1;
+            border-radius: 0; /* Đặt border-radius về 0 để có hình vuông */
+        }
+
+        /* Tùy chỉnh dấu phân trang đang hoạt động */
+        .swiper-pagination-bullet-active {
+            width: 50px; /* Chiều rộng của dấu phân trang */
+            background-color: white; /* Màu nền khi đang hoạt động */
+        }
+
+    </style>
 </head>
 
 <body class="bg-body">
@@ -37,9 +97,9 @@
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+                    <small><i class="fa fa-phone-alt mr-2"></i>086 500 8868</small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
+                    <small><i class="fa fa-envelope mr-2"></i>kokorospaservices@gmail.com</small>
                 </div>
             </div>
             <div class="col-lg-6 text-right">
@@ -66,7 +126,7 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <nav class="w-full py-3 py-lg-0 px-lg-5 flex items-center justify-between">
+    <nav class="w-full px-3 py-3 py-lg-0 px-lg-5 flex items-center justify-between">
         <div class="flex items-center">
             <button type="button" class="flex items-center text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
