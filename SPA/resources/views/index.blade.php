@@ -157,130 +157,129 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Carousel Start -->
-    @include('/home_slide')
-    <!-- Carousel End -->
+    <div>
+          <!-- Carousel Start -->
+        @include('/home_slide')
+        <!-- Carousel End -->
 
 
-    <!-- About Start -->
-    <div class="w-full py-5">
-        @include('/home_about_us')
-    </div>
-    <!-- About End -->
+        <!-- About Start -->
+        <div class="w-full py-5">
+            @include('/home_about_us')
+        </div>
+        <!-- About End -->
 
 
-    <!-- Service Start -->
-    <div class="container-fluid px-0 py-5 my-5">
-        @include('service_slide')
-    </div>
-    <!-- Service End -->
+        <!-- Service Start -->
+        <div class="container-fluid px-0 py-5 my-5">
+            @include('service_slide')
+        </div>
+        <!-- Service End -->
 
 
-    <!-- Open Hours Start -->
-    <div class="container-fluid py-5">
-        @include('home_open_house')
-    </div>
-    <!-- Open Hours End -->
+        <!-- Open Hours Start -->
+        <div class="container-fluid py-5">
+            @include('home_open_house')
+        </div>
+        <!-- Open Hours End -->
 
 
-    <!-- Pricing Start -->
-    <div class="container-fluid bg-pricing" style="margin: 90px 0;">
-        @include('home_pricing')
-    </div>
-    <!-- Pricing End -->
+        <!-- Pricing Start -->
+        <div class="container-fluid bg-pricing" style="margin: 90px 0;">
+            @include('home_pricing')
+        </div>
+        <!-- Pricing End -->
 
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-6">
-                    <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Spa Specialist</h6>
-                    <h1 class="mb-5">Spa & Beauty Specialist</h1>
+        <!-- Team Start -->
+        <div class="container-fluid py-5">
+            <div class="container pt-5">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-6">
+                        <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Spa Specialist</h6>
+                        <h1 class="mb-5">Spa & Beauty Specialist</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        <div class="position-relative text-center">
-                            <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Olivia Mia</h5>
-                                <p class="m-0">Spa & Beauty Expert</p>
-                            </div>
-                            <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team position-relative overflow-hidden mb-5">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <div class="position-relative text-center">
+                                <div class="team-text bg-primary text-white">
+                                    <h5 class="text-white text-uppercase">Olivia Mia</h5>
+                                    <p class="m-0">Spa & Beauty Expert</p>
+                                </div>
+                                <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="position-relative text-center">
-                            <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Cory Brown</h5>
-                                <p class="m-0">Spa & Beauty Expert</p>
-                            </div>
-                            <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        <div class="position-relative text-center">
-                            <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Elizabeth Ross</h5>
-                                <p class="m-0">Spa & Beauty Expert</p>
-                            </div>
-                            <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team position-relative overflow-hidden mb-5">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <div class="position-relative text-center">
+                                <div class="team-text bg-primary text-white">
+                                    <h5 class="text-white text-uppercase">Cory Brown</h5>
+                                    <p class="m-0">Spa & Beauty Expert</p>
+                                </div>
+                                <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        <div class="position-relative text-center">
-                            <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Kelly Walke</h5>
-                                <p class="m-0">Spa & Beauty Expert</p>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team position-relative overflow-hidden mb-5">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <div class="position-relative text-center">
+                                <div class="team-text bg-primary text-white">
+                                    <h5 class="text-white text-uppercase">Elizabeth Ross</h5>
+                                    <p class="m-0">Spa & Beauty Expert</p>
+                                </div>
+                                <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
-                            <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team position-relative overflow-hidden mb-5">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <div class="position-relative text-center">
+                                <div class="team-text bg-primary text-white">
+                                    <h5 class="text-white text-uppercase">Kelly Walke</h5>
+                                    <p class="m-0">Spa & Beauty Expert</p>
+                                </div>
+                                <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Team End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-5">
+            @include('home_feedback')
+        </div>
+        <!-- Testimonial End -->
     </div>
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        @include('home_feedback')
-    </div>
-    <!-- Testimonial End -->
-
-
     <!-- Footer Start -->
         @include('/footer')
     <!-- Footer End -->

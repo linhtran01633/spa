@@ -1,0 +1,172 @@
+{
+    "lang" : "vn",
+    "menu" : "Menu",
+    "menu.home" : "TRANG CHỦ",
+    "menu.service" : "DỊCH VỤ",
+    "menu.service.service1" : "Massage truyền thống nhật bản",
+    "menu.service.service2" : "Massage bấm huyệt nhật bản",
+    "menu.service.service3" : "Massage thái",
+    "menu.service.service4" : "Trị liệu cổ vai gáy",
+    "menu.service.service5" : "Massage Chân",
+    "menu.service.service6" : "Gội đầu dưỡng sinh",
+    "menu.service.service7" : "Chăm sóc da cơ bản",
+    "menu.service.service8" : "Dịch vụ bổ sung",
+    "menu.service.service9" : "Phòng vip",
+    "menu.service.service10" : "Combo",
+    "menu.promotion" : "KHUYẾN MÃI",
+    "menu.recruitment" : "TUYỂN DỤNG",
+    "menu.access" : "TRUY CẬP",
+    "name_spa" : "KOKORO SPA",
+
+    "welcome" : "Welcome To",
+    "welcome.comment" : "Chào mừng Quý Khách đến KOKORO SPA",
+
+    "gallery" : "Our Gallery",
+    "gallery.comment" : " Bạn sẽ cảm nhận được vùng đất thơ mộng tại Kocochi chỉ trong 10 phút đầu tiên !",
+
+    "about_us" : "Về KOKORO SPA",
+    "about_us.comment1" : "Tọa lạc trên con đường sầm uất và nhiệt độ oi bức đặc trưng của khu vực đường Hai Bà Trưng, Quận 3,こころスパ (Kokoro Spa) chỉ tập trung vào việc mang lại sự cân bằng và chữa lành cho tâm hồn thông qua các liệu pháp thư giãn và phục hồi sức khỏe. \nPhong cách massage này kết hợp các kỹ thuật truyền thống của Nhật Bản, bao gồm Shiatsu, một liệu pháp dùng áp lực nhẹ nhàng lên các huyệt đạo trên cơ thể để kích thích tuần hoàn và giảm căng thẳng.",
+    "about_us.comment2" : "Tên 'Kokoro' (心) trong tiếng Nhật có nghĩa là 'tâm hồn', thể hiện triết lý chăm sóc toàn diện cả về thể chất lẫn tinh thần, mang lại một trạng thái thư thái và an yên sau mỗi liệu pháp. \nĐồng thời cũng mang ý nghĩa “sự phục vụ đến từ trái tim” Omotenashi đến từ Nhật Bản.",
+
+    "phone" : "Điện thoại",
+    "address" : "Địa chỉ",
+    "contract" : "Liên hệ",
+
+    "note1": "* Giá đã bao gồm Tip, không bao gồm VAT",
+    "note2": "* Quý khách hàng có nhu cầu sử dụng phòng VIP :",
+    "note3": "1. Khách hàng là thành viên VIP của Kokoro Spa.",
+    "note4": "2. Khách hàng sử dụng dịch vụ Premium.",
+    "note5": "3. Khách hàng đã mua gói liệu trình.",
+    "note6": "4. Khách hàng trả thêm 100.000 VND phí sử dụng phòng VIP.",
+    "note7": "* Đối với những khách hàng trên, vui lòng cho chúng tôi biết quý khách muốn sử dụng phòng VIP khi đặt phòng. Phòng VIP của chúng tôi có giới hạn.",
+    "note8": "Xin lưu ý rằng chúng tôi có thể không đáp ứng được yêu cầu đặt trước của bạn, vì chúng tôi sẽ trả lời trên cơ sở ai đến trước được phục vụ trước.",
+
+    "traditional_massage.service1" : "60 phút (không kèm đá nóng)",
+    "traditional_massage.comment1" : "(vai, cổ, chân trước, tay, đầu)",
+    "traditional_massage.price1" : "499,000 VND ",
+
+    "traditional_massage.service2" : "90 phút (có đá nóng)",
+    "traditional_massage.comment2" : "(full body)",
+    "traditional_massage.price2" : "699,000 VND ",
+
+    "traditional_massage.service3" : "120 phút (có đá nóng)",
+    "traditional_massage.comment3" : "(full body)",
+    "traditional_massage.price3" : "899,000 VND ",
+
+    "traditional_massage.service4" : "Đá nóng",
+    "traditional_massage.comment4" : " ",
+    "traditional_massage.price4" : "69,000 VND",
+
+    "traditional_massage.service5" : "Mặt nạ gừng",
+    "traditional_massage.comment5" : " ",
+    "traditional_massage.price5" : "99,000 VND",
+
+    "traditional_massage.service6" : "Tinh dầu Aroma",
+    "traditional_massage.comment6" : "(chọn 1 trong 5 loại)",
+    "traditional_massage.price6" : "99,000 VND",
+
+    "acupressure_massage.service1" : "75 phút",
+    "acupressure_massage.comment1" : " ",
+    "acupressure_massage.price1" : "699,000 VND",
+
+    "acupressure_massage.service2" : "120 phút",
+    "acupressure_massage.comment2" : " ",
+    "acupressure_massage.price2" : "899,000 VND",
+
+    "thai_massage.service1" : "75 phút",
+    "thai_massage.comment1" : " ",
+    "thai_massage.price1" : "699,000 VND",
+
+    "thai_massage.service2" : "90 phút",
+    "thai_massage.comment2" : " ",
+    "thai_massage.price2" : "799,000 VND",
+
+    "neck_and_shoulder_therapy.service1" : "60 phút",
+    "neck_and_shoulder_therapy.comment1" : " ",
+    "neck_and_shoulder_therapy.price1" : "449,000 VND",
+
+    "neck_and_shoulder_therapy.service2" : "90 phút",
+    "neck_and_shoulder_therapy.comment2" : " ",
+    "neck_and_shoulder_therapy.price2" : "699,000 VND",
+
+    "foot_massage.service1" : "60 phút",
+    "foot_massage.comment1" : " ",
+    "foot_massage.price1" : "449,000 VND",
+
+    "foot_massage.service2" : "90 phút",
+    "foot_massage.comment2" : " ",
+    "foot_massage.price2" : "649,000 VND",
+
+    "healthy_shampoo.service1" : "Gội sạch 30 phút",
+    "healthy_shampoo.comment1" : "gội 2 lần, xả, sấy, dưỡng tóc (chỉ sử dụng với combo)",
+    "healthy_shampoo.price1" : "99,000 VND ",
+
+    "healthy_shampoo.service2" : "Gội đầu thư giãn massage cổ vai gáy 45 phút",
+    "healthy_shampoo.comment2" : "massage cổ vai gáy 15p, gội 2 lần xả, sấy, dưỡng tóc",
+    "healthy_shampoo.price2" : "299,000 VND ",
+
+    "healthy_shampoo.service3" : "Gội đầu Kokoro spa (hair treatment) 90 phút",
+    "healthy_shampoo.comment3" : "massage cổ vai gáy 30p, chăm sóc da cơ bản 30p, gội 2 lần xả, sấy, dưỡng tóc",
+    "healthy_shampoo.price3" : "599,000 VND ",
+
+    "healthy_shampoo.service4" : "Đắp mặt nạ",
+    "healthy_shampoo.comment4" : "bao gồm tẩy tế bào chết",
+    "healthy_shampoo.price4" : "99,000 VND",
+
+    "healthy_shampoo.service5" : "Giảm stress 15 phút",
+    "healthy_shampoo.comment5" : " ",
+    "healthy_shampoo.price5" : "99,000 VND",
+
+    "facial.service1" : "45 phút",
+    "facial.comment1" : "tẩy trang, tẩy tế bào chết, rửa mặt, massage nâng cơ dưỡng sinh 25 phút, đắp nạ, massage đầu, toner, kem dưỡng, kem chống nắng",
+    "facial.price1" : "349,000 VND",
+
+    "facial.service2" : "75 phút",
+    "facial.comment2" : "tẩy trang, tẩy tế bào chết, rửa mặt, massage nâng cơ dưỡng sinh 40 phút, đắp nạ, massage đầu, toner, kem dưỡng, kem chống nắng",
+    "facial.price2" : "649,000 VND",
+
+    "other_services.service1" : "Dịch vụ xông hơi",
+    "other_services.comment1" : " ",
+    "other_services.price1" : "99,000 VND",
+
+    "other_services.service2" : "Tắm sạch",
+    "other_services.comment2" : " ",
+    "other_services.price2" : "99,000 VND",
+
+    "vip_room.service1" : "1 người",
+    "vip_room.comment1" : " ",
+    "vip_room.price1" : "99,000 VND",
+
+    "vip_room.service2" : "2 người",
+    "vip_room.comment2" : " ",
+    "vip_room.price2" : "190,000 VND",
+
+    "combo.service1" : "Relaxing Combo",
+    "combo.comment1" : "Body 60 phút + Facial 45 phút = 105’",
+    "combo.price1" : "819,000 VND",
+
+    "combo.service2" : "Total relaxation Combo",
+    "combo.comment2" : "Body 75 phút + Facial 45 phút + Gội 30 phút = 150’",
+    "combo.price2" : "1,059,000 VND",
+
+    "access.detail" : "Thông tin chi tiết",
+    "access.detail.comment" : "SPA chúng tôi nằm ngay trên trục đường chính Hai Bà Trưng.",
+
+    "access.location" : "Vị trí của chúng tôi",
+    "access.location.comment" : "371 Hai bà trưng , Phường Võ Thị Sáu, Quận 3, TP HCM",
+
+    "access.contact" : "Thông tin liên hệ",
+    "access.contact.phone" : "Điện thoại : ",
+    "access.contact.email" : "Email : ",
+    "access.contact.phone.comment" : "086 500 8868",
+    "access.contact.email.comment" : "kokorospaservice@gmail.com",
+
+    "access.working_hours" : "Giờ làm việc",
+    "access.working_hours.everyday" : "Hàng ngày",
+    "access.working_hours.everyday.comment" : "10:00 - 22:00",
+    "access.working_hours.last_entry" : "Nhận khách đến",
+    "access.working_hours.last_entry.comment" : "21:30",
+    "access.working_hours.note" : "*Chỉ nhận dịch vụ tối đa 60 phút",
+
+    "end" : ""
+}

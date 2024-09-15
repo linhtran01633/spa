@@ -1,0 +1,176 @@
+{
+    "lang" : "en",
+    "menu" : "Menu",
+    "menu.home" : "home",
+    "menu.service" : "service",
+    "menu.service.service1" : "Traditional Japanese Massage",
+    "menu.service.service2" : "Shiatsu Massage",
+    "menu.service.service3" : "Thai massage ",
+    "menu.service.service4" : "Neck and shoulder treatment",
+    "menu.service.service5" : "Foot Massage",
+    "menu.service.service6" : "Head Shampoo Relaxing Massage",
+    "menu.service.service7" : "Facial",
+    "menu.service.service8" : "Other services",
+    "menu.service.service9" : "Vip room",
+    "menu.service.service10" : "Combo",
+    "menu.promotion" : "promotion",
+    "menu.recruitment" : "recruitment",
+    "menu.access" : "access",
+    "name_spa" : "KOKORO SPA",
+
+
+    "welcome" : "Welcome To",
+    "welcome.comment" : "Welcome to KOKORO SPA",
+
+    "gallery" : "Our Gallery",
+    "gallery.comment" : " You will feel the poetic land of Kocochi in just the first 10 minutes!",
+
+    "about_us" : "About KOKORO SPA",
+    "about_us.comment1" : "Located on a busy street and with the typical sultry temperature of Hai Ba Trung street area, District 3, こころスパ (Kokoro Spa) only focuses on bringing balance and healing to the soul through therapeutic treatments. method to relax and restore health. This style of massage combines traditional Japanese techniques, including Shiatsu, a therapy that uses gentle pressure on acupuncture points on the body to stimulate circulation and reduce tension.",
+    "about_us.comment2" : "The name 'Kokoro' (心) in Japanese means 'soul', representing the philosophy of comprehensive care for both body and mind, bringing a state of relaxation and peace after each treatment. At the same time, it also means 'service from the heart' Omotenashi from Japan.",
+
+    "phone" : "Phone",
+    "address" : "Address",
+    "contract" : "Contract",
+
+    "note1": "* TIP inclueded, VAT not including",
+    "note2": "* Customers who want to use VIP rooms",
+    "note3": "1. Kocochi Spa VIP member customers.",
+    "note4": "2. Customers who using Premium menu.",
+    "note5": "3. Customers who purchased package menu.",
+    "note6": "4. Customers who pay 100,000 VND for VIP room usage fee as an additional fee.",
+    "note7": "* For the above customers, please tell us that you would like to use the VIP room when making a reservation.",
+    "note8": "VIP rooms are limited. Please note that we may not be able to meet your reservation request, as we will respond on a first-come, first-served basis.",
+
+
+    "traditional_massage.service1" : "60 minutes (without hot stones)",
+    "traditional_massage.comment1" : "(shoulders, neck, forelegs, arms, head)",
+    "traditional_massage.price1" : "499,000 VND ",
+
+    "traditional_massage.service2" : "90 minutes (with hot stones)",
+    "traditional_massage.comment2" : "(full body)",
+    "traditional_massage.price2" : "699,000 VND ",
+
+    "traditional_massage.service3" : "120 minutes (with hot stones)",
+    "traditional_massage.comment3" : "(full body)",
+    "traditional_massage.price3" : "899,000 VND ",
+
+    "traditional_massage.service4" : "Hot stone",
+    "traditional_massage.comment4" : " ",
+    "traditional_massage.price4" : "69,000 VND",
+
+    "traditional_massage.service5" : "Ginger Packing",
+    "traditional_massage.comment5" : " ",
+    "traditional_massage.price5" : "99,000 VND",
+
+    "traditional_massage.service6" : "Aroma Essential Oil",
+    "traditional_massage.comment6" : "choose 1 of 5 types",
+    "traditional_massage.price6" : "99,000 VND",
+
+    "acupressure_massage.service1" : "75 min",
+    "acupressure_massage.comment1" : " ",
+    "acupressure_massage.price1" : "699,000 VND",
+
+    "acupressure_massage.service2" : "120 min",
+    "acupressure_massage.comment2" : " ",
+    "acupressure_massage.price2" : "899,000 VND",
+
+    "thai_massage.service1" : "75 min",
+    "thai_massage.comment1" : " ",
+    "thai_massage.price1" : "699,000 VND",
+
+    "thai_massage.service2" : "90 min",
+    "thai_massage.comment2" : " ",
+    "thai_massage.price2" : "799,000 VND",
+
+    "neck_and_shoulder_therapy.service1" : "60 min",
+    "neck_and_shoulder_therapy.comment1" : " ",
+    "neck_and_shoulder_therapy.price1" : "449,000 VND",
+
+    "neck_and_shoulder_therapy.service2" : "90 min",
+    "neck_and_shoulder_therapy.comment2" : " ",
+    "neck_and_shoulder_therapy.price2" : "699,000 VND",
+
+    "foot_massage.service1" : "60 min",
+    "foot_massage.comment1" : " ",
+    "foot_massage.price1" : "449,000 VND",
+
+    "foot_massage.service2" : "90 min",
+    "foot_massage.comment2" : " ",
+    "foot_massage.price2" : "649,000 VND",
+
+    "healthy_shampoo.service1" : "30-minute hair shampoo",
+    "healthy_shampoo.comment1" : "2 times for shampoo, rinse, blow dry, condition hair (only use with combo)",
+    "healthy_shampoo.price1" : "99,000 VND ",
+
+    "healthy_shampoo.service2" : "Relaxing shampoo, neck and shoulder massage 45 minutes",
+    "healthy_shampoo.comment2" : "15-minute neck and shoulder massage, shampoo 2 times, rinse, blow dry, hair care",
+    "healthy_shampoo.price2" : "299,000 VND ",
+
+    "healthy_shampoo.service3" : "Gội đầu Kokoro spa (hair treatment) 90 phút",
+    "healthy_shampoo.comment3" : " ",
+    "healthy_shampoo.price3" : "599,000 VND ",
+
+    "healthy_shampoo.service4" : "Facial mask",
+    "healthy_shampoo.comment4" : "including exfoliation",
+    "healthy_shampoo.price4" : "99,000 VND",
+
+    "healthy_shampoo.service5" : "15-minute stress relief massage",
+    "healthy_shampoo.comment5" : " ",
+    "healthy_shampoo.price5" : "99,000 VND",
+
+
+    "facial.service1" : "45 min",
+    "facial.comment1" : "makeup removal, exfoliation, facial cleansing, 25-minute body-lifting massage, mask, head massage, toner, moisturizer, sunscreen",
+    "facial.price1" : "349,000 VND",
+
+    "facial.service2" : "75 min",
+    "facial.comment2" : "makeup removal, exfoliation, facial cleansing, 40-minute body-lifting massage, mask, head massage, toner, moisturizer, sunscreen",
+    "facial.price2" : "649,000 VND",
+
+    "other_services.service1" : "Sauna",
+    "other_services.comment1" : " ",
+    "other_services.price1" : "99,000 VND",
+
+    "other_services.service2" : "Shower",
+    "other_services.comment2" : " ",
+    "other_services.price2" : "99,000 VND",
+
+    "vip_room.service1" : "1 pax",
+    "vip_room.comment1" : " ",
+    "vip_room.price1" : "99,000 VND",
+
+    "vip_room.service2" : "2 pax",
+    "vip_room.comment2" : " ",
+    "vip_room.price2" : "190,000 VND",
+
+    "combo.service1" : "Relaxing Combo",
+    "combo.comment1" : "Body 60 minutes + Facial 45 minutes = 105 minutes",
+    "combo.price1" : "819,000 VND",
+
+    "combo.service2" : "Total relaxation Combo ",
+    "combo.comment2" : "Body 75 minutes + Facial 45 minutes + Shampoo 30 minutes = 150 minutes",
+    "combo.price2" : "1,059,000 VND",
+
+    "access.detail" : "Contact Details",
+    "access.detail.comment" : "It is located just after going up the side street of Hai Ba Trung Street",
+
+    "access.location" : "Our Location",
+    "access.location.comment" : "371 Hai Ba Trung St,  Vo Thi Sau Ward, District 3, Ho Chi Minh City, VIETNAM",
+
+    "access.contact" : "Contact Info",
+    "access.contact.phone" : "Phone : ",
+    "access.contact.email" : "Email : ",
+    "access.contact.phone.comment" : "086 500 8868",
+    "access.contact.email.comment" : "kokorospaservice@gmail.com",
+
+    "access.working_hours" : "Working Hours",
+    "access.working_hours.everyday" : "Everyday : ",
+    "access.working_hours.everyday.comment" : "10:00 - 22:00",
+    "access.working_hours.last_entry" : "Last entry : ",
+    "access.working_hours.last_entry.comment" : "21:30",
+    "access.working_hours.note" : "*Only receive service for maximum 60 minutes",
+
+
+    "end" : ""
+}

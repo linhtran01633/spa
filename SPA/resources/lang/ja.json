@@ -1,0 +1,173 @@
+{
+    "lang" : "jp",
+    "menu" : "Menu",
+    "menu.home" : "home",
+    "menu.service" : "サービス&メニュー ",
+    "menu.service.service1" : "日本古式マッサージ",
+    "menu.service.service2" : "指圧マッサージ",
+    "menu.service.service3" : "タイ古式マッサージ",
+    "menu.service.service4" : "首と肩のトリートメント",
+    "menu.service.service5" : "フートマッサージ",
+    "menu.service.service6" : "ヘッドシャンプー リラクシングマッサージ",
+    "menu.service.service7" : "基礎スキンケア/フェイシャル",
+    "menu.service.service8" : "追加サービス",
+    "menu.service.service9" : "VIP個室部屋",
+    "menu.service.service10" : "ココロスパコリラクゼーションコンボ",
+    "menu.promotion" : "プロモーション",
+    "menu.recruitment" : "求人募集",
+    "menu.access" : "アクセス",
+    "name_spa" : "こころスパ",
+
+
+    "welcome" : "ようこそ",
+    "welcome.comment" : "KOKORO SPAへようこそ",
+
+    "gallery" : "私たちのギャラリー",
+    "gallery.comment" : " 最初の10分で詩の国高知を体感！",
+
+    "about_us" : "ココチスパについて",
+    "about_us.comment1" : "3区ハイバーチュン通りエリアのにぎやかな通りに位置し、特有の蒸し暑い気温の中、こころスパは、セラピートリートメントを通じて心のバランスと癒しをもたらすことのみに焦点を当てています。リラックスして健康を回復する方法です。このマッサージスタイルは、身体のツボに優しく圧力をかけることで血行を促進し、緊張を和らげる療法である指圧を含む伝統的な日本の技術を組み合わせたものです。",
+    "about_us.comment2" : "「心」という名前は日本語で「魂」を意味し、体と心の両方の包括的なケアの哲学を表しており、各治療後にリラクゼーションと平安の状態をもたらします。それは同時に、「心からのサービス」を意味するものでもあります。[おもてなし] は日本発祥です。",
+
+    "phone" : "電話",
+    "address" : "住所",
+    "contract" : "連絡先",
+
+    "note1": "* チップ含む、税抜き",
+    "note2": "* VIPルームの使用をご希望のお客様",
+    "note3": "1. Kokoro Spa VIPメンバーのお客様は無料",
+    "note4": "2. Mai先生によるプレミアムメニューをご注文のお客様 は無料",
+    "note5": "3. パッケージメニューをご注文のお客様 は無料",
+    "note6": "4. 追加料金としてVIPルーム使用料100,000VNDをお支払いのお客様",
+    "note7": "※上記対象のお客様は予約時に「VIPルーム使用を希望」とお伝えください。VIPルームには限りがあります。",
+    "note8": "予約先着順にて対応しますので、予約のご希望に添えない場合がございますことを予めご了承くださいませ。",
+
+    "traditional_massage.service1" : "60分（暖石なし）",
+    "traditional_massage.comment1" : "(肩、首、前脚、腕、頭)",
+    "traditional_massage.price1" : "499,000 VND ",
+
+    "traditional_massage.service2" : "90分（暖石有り）",
+    "traditional_massage.comment2" : "(全身)",
+    "traditional_massage.price2" : "699,000 VND ",
+
+    "traditional_massage.service3" : "120分（暖石有り）",
+    "traditional_massage.comment3" : "(全身)",
+    "traditional_massage.price3" : "899,000 VND ",
+
+    "traditional_massage.service4" : "暖石",
+    "traditional_massage.comment4" : " ",
+    "traditional_massage.price4" : "69,000 VND",
+
+    "traditional_massage.service5" : "ジンジャーマスク",
+    "traditional_massage.comment5" : " ",
+    "traditional_massage.price5" : "99,000 VND",
+
+    "traditional_massage.service6" : "アロマ精油",
+    "traditional_massage.comment6" : " ",
+    "traditional_massage.price6" : "99,000 VND",
+
+    "acupressure_massage.service1" : "75分",
+    "acupressure_massage.comment1" : " ",
+    "acupressure_massage.price1" : "699,000 VND",
+
+    "acupressure_massage.service2" : "120分",
+    "acupressure_massage.comment2" : " ",
+    "acupressure_massage.price2" : "899,000 VND",
+
+    "thai_massage.service1" : "75分",
+    "thai_massage.comment1" : " ",
+    "thai_massage.price1" : "699,000 VND",
+
+    "thai_massage.service2" : "90分",
+    "thai_massage.comment2" : " ",
+    "thai_massage.price2" : "799,000 VND",
+
+    "neck_and_shoulder_therapy.service1" : "60分",
+    "neck_and_shoulder_therapy.comment1" : " ",
+    "neck_and_shoulder_therapy.price1" : "449,000 VND",
+
+    "neck_and_shoulder_therapy.service2" : "90分",
+    "neck_and_shoulder_therapy.comment2" : " ",
+    "neck_and_shoulder_therapy.price2" : "699,000 VND",
+
+    "foot_massage.service1" : "60分",
+    "foot_massage.comment1" : " ",
+    "foot_massage.price1" : "449,000 VND",
+
+    "foot_massage.service2" : "90分",
+    "foot_massage.comment2" : " ",
+    "foot_massage.price2" : "649,000 VND",
+
+    "healthy_shampoo.service1" : "Gội sạch 30 分",
+    "healthy_shampoo.comment1" : "gội 2 lần, xả, sấy, dưỡng tóc (chỉ sử dụng với combo)",
+    "healthy_shampoo.price1" : "99,000 VND ",
+
+    "healthy_shampoo.service2" : "Gội đầu thư giãn massage cổ vai gáy 45 phút",
+    "healthy_shampoo.comment2" : "massage cổ vai gáy 15p, gội 2 lần xả, sấy, dưỡng tóc",
+    "healthy_shampoo.price2" : "299,000 VND ",
+
+    "healthy_shampoo.service3" : "Gội đầu Kokoro spa (hair treatment) 90 phút",
+    "healthy_shampoo.comment3" : "massage cổ vai gáy 30p, chăm sóc da cơ bản 30p, gội 2 lần xả, sấy, dưỡng tóc",
+    "healthy_shampoo.price3" : "599,000 VND ",
+
+    "healthy_shampoo.service4" : "Đắp mặt nạ",
+    "healthy_shampoo.comment4" : "bao gồm tẩy tế bào chết",
+    "healthy_shampoo.price4" : "99,000 VND",
+
+    "healthy_shampoo.service5" : "Giảm stress 15 phút",
+    "healthy_shampoo.comment5" : " ",
+    "healthy_shampoo.price5" : "99,000 VND",
+
+    "facial.service1" : "45分",
+    "facial.comment1" : "メイク落とし、角質除去、洗顔、25分間のボディリフティングマッサージ、マスク、ヘッドマッサージ、化粧水、保湿剤、日焼け止め",
+    "facial.price1" : "349,000 VND",
+
+    "facial.service2" : "75分",
+    "facial.comment2" : "メイク落とし、角質除去、洗顔、40分間のボディリフティングマッサージ、マスク、ヘッドマッサージ、化粧水、保湿剤、日焼け止め",
+    "facial.price2" : "649,000 VND",
+
+    "other_services.service1" : "サウナ",
+    "other_services.comment1" : " ",
+    "other_services.price1" : "99,000 VND",
+
+    "other_services.service2" : "シャワー",
+    "other_services.comment2" : " ",
+    "other_services.price2" : "99,000 VND",
+
+    "vip_room.service1" : "1名様",
+    "vip_room.comment1" : " ",
+    "vip_room.price1" : "99,000 VND",
+
+    "vip_room.service2" : "2名様",
+    "vip_room.comment2" : " ",
+    "vip_room.price2" : "190,000 VND",
+
+    "combo.service1" : "リラックス コンボ ",
+    "combo.comment1" : "ボディ 60 分 + フェイシャル 45 分 = 105 分",
+    "combo.price1" : "819,000 VND",
+
+    "combo.service2" : "トータル リラクゼーション コンボ ",
+    "combo.comment2" : "ボディ 75 分 + フェイシャル 45 分 + ウォッシュ 30 分 = 150 分",
+    "combo.price2" : "1,059,000 VND",
+
+    "access.detail" : "連絡先",
+    "access.detail.comment" : "ハイバチュン通りの脇道を上ったところにあります",
+
+    "access.location" : "私たちの所在地",
+    "access.location.comment" : "371 Hai Ba Trung St,  Vo Thi Sau Ward, District 3, Ho Chi Minh City, VIETNAM",
+
+    "access.contact" : "連絡先情報",
+    "access.contact.phone" : "電話 : ",
+    "access.contact.email" : "電子メール : ",
+    "access.contact.phone.comment" : "086 500 8868",
+    "access.contact.email.comment" : "kokorospaservice@gmail.com",
+
+    "access.working_hours" : "労働時間",
+    "access.working_hours.everyday" : "日常 : ",
+    "access.working_hours.everyday.comment" : "10:00 - 22:00",
+    "access.working_hours.last_entry" : "最後のエントリ : ",
+    "access.working_hours.last_entry.comment" : "21:30",
+    "access.working_hours.note" : "*最長60分間のみサービスを受けることができます",
+
+    "end" : ""
+}
