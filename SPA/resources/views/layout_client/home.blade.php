@@ -1,6 +1,12 @@
 @extends('layout_client.main')
 @section('css')
-
+    <style>
+        @media (max-width: 768px) {
+            #myCarousel {
+                margin-top: 70px;
+            }
+        }
+    </style>
 @endsection
 @section('content')
     <div id="myCarousel" class="carousel slide" data-ride="carousel">

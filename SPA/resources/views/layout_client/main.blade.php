@@ -47,8 +47,43 @@
                 navbar.classList.remove('scrolled');
             }
         }
-
         window.addEventListener('scroll', changeNavbarColorOnScroll);
+
+        function toggleMenu() {
+            console.log('Toggling menu');
+            const menu = document.getElementById("menu_mobile");
+            // menu.classList.toggle("hidden");
+        }
+
+
+        window.addEventListener('click', toggleMenu);
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu_toggle');
+            const menuMobile = document.getElementById('menu_mobile');
+            const iconBars = menuToggle.querySelector('.fa-bars');
+            const iconXmark = menuToggle.querySelector('.fa-xmark');
+            const subMenuLinks = document.querySelectorAll('.mobile-nav li > a');
+
+            // Toggle hiển thị menu mobile
+            menuToggle.addEventListener('click', function () {
+                menuMobile.classList.toggle('hidden');
+                iconBars.classList.toggle('hidden');
+                iconXmark.classList.toggle('hidden');
+            });
+
+            // Thêm sự kiện cho các liên kết có submenu
+            subMenuLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    const nextElement = link.nextElementSibling;
+                    if (nextElement && nextElement.classList.contains('sub-menu-mobile')) {
+                        event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+                        nextElement.classList.toggle('open'); // Hiển thị submenu khi nhấp
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
