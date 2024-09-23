@@ -67,7 +67,7 @@
             <div class="row d-flex align-items-center bg-color-05">
                 <div class="col-lg-6 a4-img">
                     <div class="img-block">
-                        <img class="img-fluid" src="/images/slide/slide-2.jpg" alt="about-image">
+                        <img class="img-fluid" src="/images/slide/slide-1.jpg" alt="about-image">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -101,7 +101,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="pb-4">
         <div class="container">
             <div class="pt-100">
                 <div class="col-lg-10 offset-lg-1">
@@ -117,7 +117,7 @@
             <div class="row">
                 <div class="image-grid">
                     <div class="image-container">
-                        <img src="/images/slide/slide-2.jpg" alt="Image 1">
+                        <img src="/images/about_us/DSC00690.jpg" alt="Image 1">
                         <div class="hover-text">
                             <div class="image-data">
                                 <h3><b><a href="/traditional-massage">{{__('menu.service.service1')}} </a></b></h3>
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="/images/slide/slide-2.jpg" alt="Image 3">
+                        <img src="/images/about_us/DSC00722.jpg" alt="Image 3">
                         <div class="hover-text">
                             <div class="image-data">
                                 <h3><b><a href="/thai-massage">{{__('menu.service.service3')}} </a></b></h3>
@@ -153,7 +153,7 @@
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="/images/slide/slide-2.jpg" alt="Image 5">
+                        <img src="/images/about_us/DSC00708.jpg" alt="Image 5">
                         <div class="hover-text">
                             <div class="image-data">
                                 <h3><b><a href="/foot-massage">{{__('menu.service.service5')}} </a></b></h3>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="/images/slide/slide-2.jpg" alt="Image 8">
+                        <img src="/images/about_us/DSC00755.jpg" alt="Image 8">
                         <div class="hover-text">
                             <div class="image-data">
                                 <h3><b><a href="/other-services">{{__('menu.service.service8')}} </a></b></h3>
@@ -189,7 +189,7 @@
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="/images/slide/slide-2.jpg" alt="Image 9">
+                        <img src="/images/about_us/DSC00716.jpg" alt="Image 9">
                         <div class="hover-text">
                             <div class="image-data">
                                 <h3><b><a href="/vip-room">{{__('menu.service.service9')}} </a></b></h3>
@@ -227,7 +227,6 @@
                 <div class="working-hours-text">
                     <h2> <b>Giờ mở cửa:</b> </h2>
                     <h4>10:00 - 22:00 hằng ngày</h4>
-                    <h4>kokoro spa hoạt động xuyên các dịp lễ tết</h4>
                 </div>
                 <div class="working-hours-img">
                     <img class="img-fluid" src="/images/slide/slide-2.jpg" alt="about-image">

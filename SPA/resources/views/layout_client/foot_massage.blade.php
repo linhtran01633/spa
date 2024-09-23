@@ -2,13 +2,15 @@
 @section('css')
     <style>
         #fixNav {
-            color: black !important;
+            color: #5f5842 !important;
             background-color: white !important;
         }
 
         #fixNav .menu li a{
-            color: black;
+            color: #5f5842;
+            text-shadow: none;
         }
+    </style>
     </style>
 @endsection
 @section('content')

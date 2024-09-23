@@ -26,17 +26,14 @@
 }
 .menu li a{
     display: block;
-    color: white;
+    color: #dcb43b;
     padding: 0 10px;
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.scrolled .menu li a{
-    color: black;
+    text-shadow: 2px 1px 0px #212529;
 }
 
 
@@ -59,6 +56,7 @@
 
 .menu li ul li a{
     color: #465777;
+    text-shadow: none;
     padding: 8px 0 8px 16px;
     transition: all 400ms ease-in-out;
 }
@@ -107,6 +105,11 @@
 .scrolled {
     background-color: white !important;
     color: black !important;
+}
+
+.scrolled ul li a{
+    color: #5f5842 !important;
+    text-shadow: none !important;
 }
 
 .mobile-nav {
@@ -185,6 +188,7 @@
         padding: 10px;
         display: block;
         text-decoration: none;
+        text-transform: uppercase;
     }
 
     .mobile-nav ul li a:hover {

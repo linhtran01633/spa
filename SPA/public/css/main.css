@@ -1,6 +1,6 @@
 body {
     font-size: 15px;
-    background-color: #FFEEDC !important;
+    background-color: #f2ebc3f0 !important;
 }
 
 img {
@@ -323,7 +323,7 @@ p {
 }
 
 .working-hours-text{
-    background-color: #fe6d70;
+    background-color: #f2ebc3f0;
     position: absolute;
     z-index: 2;
     top: 20%;
@@ -446,7 +446,7 @@ p {
     position: absolute;
     text-align: center;
     transition: all 400ms ease-in-out;
-    background: rgba(254, 109, 112, 0.7);
+    background: rgb(167 160 62 / 70%);
 }
 
 .image-container:hover .hover-text {
