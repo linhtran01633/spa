@@ -112,17 +112,13 @@ class AdminController extends Controller
         $date_to_check = $request->date;  // Ngày được chọn từ form
         $employee_id = $request->user_id; // user được chọn từ form
 
-        if($employee_id) {
-            $max_users_per_slot = 1; // Giới hạn số người đăng ký tối đa
-        } else {
-            $max_users_per_slot = User::where('status', 0)->count(); // Giới hạn số người đăng ký tối đa
-        }
+        $max_users_per_slot = User::where('status', 0)->count(); // Giới hạn số người đăng ký tối đa
+
         $time_slots = [
             '09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30',
             '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30',
             '17:00', '17:30', '18:00', '18:30', '19:00'
         ];
-
 
         // Lấy ngày và giờ hiện tại
         $today = Carbon::now()->format('Y-m-d');
@@ -150,12 +146,11 @@ class AdminController extends Controller
             }
 
             // Kiểm tra booking trong cơ sở dữ liệu cho ngày cụ thể
-
-            $bookings = DB::table('bookings')->where('date', $date_to_check);
-            if($employee_id) $bookings = $bookings->where('user_id', $employee_id);
-            $bookings = $bookings->select('time', DB::raw('COUNT(id) as total_bookings'))->groupBy('time')->get();
-
-            Log::info($bookings);
+            $bookings = DB::table('bookings')
+                            ->where('date', $date_to_check)
+                            ->select('time', DB::raw('COUNT(id) as total_bookings'))
+                            ->groupBy('time')
+                            ->get();
 
             // Chuyển dữ liệu booking thành mảng để xử lý
             $booked_slots = [];
@@ -163,17 +158,38 @@ class AdminController extends Controller
                 $booked_slots[Carbon::parse($booking->time)->format('H:i')] = $booking->total_bookings;
             }
 
+            // Kiểm tra nếu user đã đặt hẹn vào giờ nào
+            $user_bookings = [];
+            if ($employee_id) {
+                $user_bookings = DB::table('bookings')
+                                    ->where('date', $date_to_check)
+                                    ->where('user_id', $employee_id)
+                                    ->pluck('time')
+                                    ->map(function ($time) {
+                                        return Carbon::parse($time)->format('H:i');
+                                    })->toArray();
+            }
+
             // Kiểm tra khung giờ nào còn trống
             $available_slots = [];
             foreach ($time_slots as $slot) {
-                // Nếu khung giờ chưa có ai đăng ký hoặc số lượng đăng ký nhỏ hơn giới hạn tối đa
-                if (!isset($booked_slots[$slot]) || $booked_slots[$slot] < $max_users_per_slot) {
-                    // Nếu là ngày hôm nay và khung giờ đã đầy, bỏ qua
-                    if ($is_today && in_array($slot, $fully_booked_slots)) {
-                        continue;  // Bỏ qua khung giờ đã đầy
-                    }
-                    $available_slots[] = $slot;  // Chỉ thêm khung giờ còn chỗ trống
+                // Nếu khung giờ đã đầy (vượt quá số lượng người cho phép)
+                if (isset($booked_slots[$slot]) && $booked_slots[$slot] >= $max_users_per_slot) {
+                    continue;  // Bỏ qua khung giờ đã đầy
                 }
+
+                // Nếu user đã đặt hẹn ở khung giờ đó, bỏ qua
+                if (in_array($slot, $user_bookings)) {
+                    continue;  // Bỏ qua khung giờ user đã đặt
+                }
+
+                // Nếu là ngày hôm nay và khung giờ đã đầy, bỏ qua
+                if ($is_today && in_array($slot, $fully_booked_slots)) {
+                    continue;  // Bỏ qua khung giờ đã đầy
+                }
+
+                // Thêm khung giờ vào danh sách các khung giờ còn trống
+                $available_slots[] = $slot;
             }
         }
 
