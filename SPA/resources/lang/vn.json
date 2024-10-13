@@ -18,6 +18,14 @@
     "menu.access" : "TRUY CẬP",
     "name_spa" : "KOKORO SPA",
 
+    "appointment" : "đặt hẹn",
+    "full_name" : "Họ và tên",
+    "email" : "Email",
+    "staff" : "Nhân viên",
+    "date" : "Ngày",
+    "time" : "Thời gian",
+    "confirm" : "Xác nhận",
+
     "welcome" : "Welcome To",
     "welcome.comment" : "Chào mừng Quý Khách đến KOKORO SPA",
 

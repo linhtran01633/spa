@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Models\User;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
@@ -88,3 +91,29 @@ Route::get('/recruitment', function () {
 Route::get('/access', function () {
     return view('layout_client.access');
 });
+
+Route::get('/appointment', function () {
+    $users = User::where('status', 0)->get();
+    return view('layout_client.appointment', compact('users'));
+});
+
+Route::get('/booking', function () {
+    return view('layout_client.appointment');
+});
+
+Route::post('/booking', [AdminController::class, 'submitBooking'])->name('submit-booking');
+Route::post('/checkTimeFrame', [AdminController::class, 'checkTimeFrame'])->name('check-time-frame');
+
+
+Route::prefix('dashboard/')->group(function () {
+    Route::get('booking', [AdminController::class, 'booking'])->name('admin.booking');
+    Route::post('save_booking', [AdminController::class, 'submitBooking'])->name('admin.booking.save');
+    Route::post('confirmed_booking', [AdminController::class, 'confirmedBooking'])->name('admin.booking.confirmed');
+
+
+    Route::get('user', [AdminController::class, 'user'])->name('admin.user');
+    Route::post('save_user', [AdminController::class, 'saveUser'])->name('admin.user.save');
+    Route::post('edit_user', [AdminController::class, 'editUser'])->name('admin.user.edit');
+    Route::post('delete_user', [AdminController::class, 'deleteUser'])->name('admin.user.delete');
+});
+

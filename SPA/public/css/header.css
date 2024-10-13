@@ -5,7 +5,7 @@
     height: 80px;
     display: block;
     position: fixed;
-    z-index: 100000;
+    z-index: 1000;
 }
 .menu{
     margin: 0;
@@ -194,4 +194,25 @@
     .mobile-nav ul li a:hover {
         background-color: #ddd;
     }
+}
+
+.appointment a {
+    border-radius: 20px;
+    display: unset !important;
+    text-transform: uppercase;
+    background-color: #953326;
+    font-weight: 700 !important;
+    font-size: small !important;
+}
+
+.appointment a i {
+    font-size: large;
+}
+
+
+
+
+.scrolled ul li .appointment a {
+    color: white !important;
+    text-shadow: none !important;
 }

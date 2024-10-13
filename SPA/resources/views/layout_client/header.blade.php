@@ -23,6 +23,14 @@
             <li><a href="{{ url('locale/en') }}" class="@if($language == 'en') border-b @endif">EN</a></li>
             <li><a href="{{ url('locale/ja') }}" class="@if($language == 'jp') border-b @endif">JP</a></li>
             <li><a href="{{ url('locale/vn') }}" class="@if($language == 'vn') border-b @endif">VN</a></li>
+            <li>
+                <div class="appointment">
+                    <a href="/appointment" class="flex items-center px-6 py-3 px-4 bg-button rounded-full text-white no-underline">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span class="no-underline">{{__('appointment')}}</span>
+                    </a>
+                </div>
+            </li>
         </ul>
     </nav>
 

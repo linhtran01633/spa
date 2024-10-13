@@ -104,6 +104,14 @@
     <div class="pb-4">
         <div class="container">
             <div class="pt-100">
+                <video width="100%" height="100%" controls poster="/images/video-thumbnail.jpg">
+                    <source src="/video/home.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="pt-100">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="section-title mb-60 text-center">
                         <h2 class="tra-header txt-color-02"> {{__('gallery')}} </h2>
