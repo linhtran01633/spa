@@ -134,7 +134,7 @@ class AdminController extends Controller
         $fully_booked_slots = [];
 
         // Kiểm tra nếu ngày đã qua
-        if (Carbon::parse($date_to_check)->lt(Carbon::now())) {
+        if (Carbon::parse($date_to_check)->format('Y-m-d') < $today) {
             // Ngày trong quá khứ: tất cả các khung giờ đều được coi là đầy
             $available_slots = [];  // Không có khung giờ trống
         } else {
@@ -142,7 +142,8 @@ class AdminController extends Controller
             if ($is_today) {
                 // Đánh dấu tất cả các khung giờ là đã đầy
                 foreach ($time_slots as $slot) {
-                    if ($slot < $current_time) {
+                    Log::info(Carbon::parse($slot)->format('H:i'));
+                    if (Carbon::parse($slot)->format('H:i') < $current_time) {
                         $fully_booked_slots[] = $slot;  // Đánh dấu khung giờ đã đầy
                     }
                 }

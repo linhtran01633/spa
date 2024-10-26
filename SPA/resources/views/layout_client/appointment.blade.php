@@ -305,7 +305,7 @@
                             <input type="radio" name="time_select" value="10:00">
                             <div class="time-slot-content">
                                 <div class="text-center">10:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -315,7 +315,7 @@
                             <input type="radio" name="time_select" value="10:30">
                             <div class="time-slot-content">
                                 <div class="text-center">10:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -325,7 +325,7 @@
                             <input type="radio" name="time_select" value="11:00">
                                 <div class="time-slot-content">
                                 <div class="text-center">11:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -335,7 +335,7 @@
                             <input type="radio" name="time_select" value="11:30">
                                 <div class="time-slot-content">
                                 <div class="text-center">11:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -345,7 +345,7 @@
                             <input type="radio" name="time_select" value="12:00">
                                 <div class="time-slot-content">
                                 <div class="text-center">12:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -355,7 +355,7 @@
                             <input type="radio" name="time_select" value="12:30">
                             <div class="time-slot-content">
                                 <div class="text-center">12:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -365,7 +365,7 @@
                             <input type="radio" name="time_select" value="13:00">
                             <div class="time-slot-content">
                                 <div class="text-center">13:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -375,7 +375,7 @@
                             <input type="radio" name="time_select" value="13:30">
                             <div class="time-slot-content">
                                 <div class="text-center">13:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -385,7 +385,7 @@
                             <input type="radio" name="time_select" value="14:00">
                             <div class="time-slot-content">
                                 <div class="text-center">14:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -395,7 +395,7 @@
                             <input type="radio" name="time_select" value="14:30">
                             <div class="time-slot-content">
                                 <div class="text-center">14:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -405,7 +405,7 @@
                             <input type="radio" name="time_select" value="15:00">
                             <div class="time-slot-content">
                                 <div class="text-center">15:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -415,7 +415,7 @@
                             <input type="radio" name="time_select" value="15:30">
                             <div class="time-slot-content">
                                 <div class="text-center">15:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -425,7 +425,7 @@
                             <input type="radio" name="time_select" value="16:00">
                             <div class="time-slot-content">
                                 <div class="text-center">16:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -435,7 +435,7 @@
                             <input type="radio" name="time_select" value="16:30">
                             <div class="time-slot-content">
                                 <div class="text-center">16:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -445,7 +445,7 @@
                             <input type="radio" name="time_select" value="17:00">
                             <div class="time-slot-content">
                                 <div class="text-center">17:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -455,7 +455,7 @@
                             <input type="radio" name="time_select" value="17:30">
                             <div class="time-slot-content">
                                 <div class="text-center">17:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -464,7 +464,7 @@
                             <input type="radio" name="time_select" value="18:00">
                             <div class="time-slot-content">
                                 <div class="text-center">18:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -473,7 +473,7 @@
                             <input type="radio" name="time_select" value="18:30">
                             <div class="time-slot-content">
                                 <div class="text-center">18:30</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -482,7 +482,7 @@
                             <input type="radio" name="time_select" value="19:00">
                             <div class="time-slot-content">
                                 <div class="text-center">19:00</div>
-                                <div class="text-center status">còn chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
@@ -766,12 +766,12 @@
                     const statusText = slot.querySelector('.status'); // Lấy phần tử status
 
                     if (availableSlots.includes(timeValue)) {
-                        statusText.textContent = 'còn chỗ';
+                        statusText.textContent = "{{ __('has_slots') }}";
                         statusText.style.color = 'green'; // Đổi màu chữ thành xanh
                         slot.classList.remove('disabled'); // Gỡ bỏ lớp disabled nếu có
                         input.disabled = false; // Bật radio
                     } else {
-                        statusText.textContent = 'hết chỗ';
+                        statusText.textContent = "{{ __('no_slots') }}";
                         statusText.style.color = 'red'; // Đổi màu chữ thành đỏ
                         slot.classList.add('disabled'); // Thêm lớp disabled
                         input.disabled = true; // Vô hiệu hóa radio

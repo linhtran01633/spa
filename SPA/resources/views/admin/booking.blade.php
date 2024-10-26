@@ -58,7 +58,7 @@
                 scrollX: true,
                 processing: true,
                 serverSide: false,
-                searching: false,
+                searching: true,
                 autoWidth: true,
                 ajax: {
                     url: CallDataTableURL,

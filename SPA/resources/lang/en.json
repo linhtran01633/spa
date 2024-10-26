@@ -27,6 +27,9 @@
     "time" : "Time",
     "confirm" : "Confirm",
 
+    "no_slots" : "no slots",
+    "has_slots" : "has slots",
+
     "welcome" : "Welcome To",
     "welcome.comment" : "Welcome to KOKORO SPA",
 
