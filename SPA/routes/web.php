@@ -115,5 +115,8 @@ Route::prefix('dashboard/')->group(function () {
     Route::post('save_user', [AdminController::class, 'saveUser'])->name('admin.user.save');
     Route::post('edit_user', [AdminController::class, 'editUser'])->name('admin.user.edit');
     Route::post('delete_user', [AdminController::class, 'deleteUser'])->name('admin.user.delete');
+
+    Route::get('user-ajax', [AdminController::class, 'userAjax'])->name('admin.user.ajax');
+
 });
 

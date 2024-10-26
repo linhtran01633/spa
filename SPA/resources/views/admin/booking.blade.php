@@ -57,13 +57,16 @@
                 pageLength: 10,
                 scrollX: true,
                 processing: true,
-                serverSide: true,
+                serverSide: false,
                 searching: false,
                 autoWidth: true,
                 ajax: {
-                    url: CallDataTableURL, // Đường dẫn đến API hoặc tệp tin JSON cung cấp dữ liệu
-                        data: function(d){
+                    url: CallDataTableURL,
+                    type: "GET",
+                    headers: {
+                        "X-CSRF-TOKEN": $("meta[name=csrf-token]").attr("content"),
                     },
+                    dataSrc: "" // Dữ liệu được trả về dưới dạng một mảng JSON
                 },
                 columns: [
                     {data: "id"},

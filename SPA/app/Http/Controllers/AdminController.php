@@ -33,21 +33,24 @@ class AdminController extends Controller
         ];
 
         if($request->ajax()) {
-            $table_data = Booking::with('user')->select('*');
-            // $table_data->orderBy('status', 'asc');
+            $table_data = Booking::with('user')->select('*')->orderBy('status', 'asc')->get();
 
-            return DataTables::of($table_data)
-            ->addColumn('service_name', function($row) use($service) {
-                return $service[$row->service];
-            })
-            ->addColumn('user_name', function($row) {
-                return $row->user ? $row->user->name : '';
-            })
 
-            ->addColumn('time_custom', function($row) {
-                return Carbon::parse($row->time)->format('H:i');
-            })
-            ->make(true);
+            $table_data = $table_data->map(function ($row) use ($service) {
+                return [
+                    'id' => $row->id,
+                    'date' => $row->date,
+                    'phone' => $row->phone,
+                    'email' => $row->email,
+                    'status' => $row->status,
+                    'full_name' => $row->full_name,
+                    'service_name' => $service[$row->service],
+                    'user_name' => $row->user ? $row->user->name : '',
+                    'time_custom' => Carbon::parse($row->time)->format('H:i'),
+                ];
+            });
+
+            return response()->json(@$table_data);
         }
         $page_current = 'booking';
 
@@ -202,14 +205,15 @@ class AdminController extends Controller
 
     public function user(Request $request)
     {
-        if($request->ajax()) {
-            $table_data = User::select('*')->where('status', 0);
-            return DataTables::of($table_data)
-            ->make(true);
-        }
         $page_current = 'user';
 
         return view('admin.user', compact('page_current'));
+    }
+
+    public function userAjax(Request $request) {
+        $table_data = User::select('*')->where('status', 0)->get();
+
+        return response()->json(@$table_data);
     }
 
     public function saveUser(UserRequest $request)

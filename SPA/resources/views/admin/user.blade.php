@@ -169,21 +169,24 @@
 @endsection
 @section('scripts')
     <script>
-            $(document).ready(function() {
-            var CallDataTableURL = '{!! route('admin.user') !!}';
+        $(document).ready(function() {
+            var CallDataTableURL = '{!! route('admin.user.ajax') !!}';
             var table = $('#data_table').DataTable({
                 paging: true,
                 pagingType: 'simple',
                 pageLength: 10,
                 scrollX: true,
                 processing: true,
-                serverSide: true,
-                searching: false,
+                serverSide: false, // Không sử dụng server-side
+                searching: true,
                 autoWidth: true,
                 ajax: {
-                    url: CallDataTableURL, // Đường dẫn đến API hoặc tệp tin JSON cung cấp dữ liệu
-                        data: function(d){
+                    url: CallDataTableURL,
+                    type: "GET",
+                    headers: {
+                        "X-CSRF-TOKEN": $("meta[name=csrf-token]").attr("content"),
                     },
+                    dataSrc: "" // Dữ liệu được trả về dưới dạng một mảng JSON
                 },
                 columns: [
                     {data: "id"},
@@ -194,20 +197,18 @@
                     {
                         data: null,
                         className: "dt-center editor-delete flex justify-start",
-                        render : function ( data, type, row ) {
-                            let html = `
+                        render: function(data, type, row) {
+                            return `
                                 <button type="button" x-on:click="editRow(${row.id})" class="inline-flex items-center px-5 py-2.5 mx-1 text-sm font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
                                     Edit
                                 </button>
-
-                                 <button type="button" x-on:click="deleteRow(${row.id})" class=" ml-4 inline-flex items-center px-5 py-2.5 mx-1 text-sm font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300">
+                                <button type="button" x-on:click="deleteRow(${row.id})" class="ml-4 inline-flex items-center px-5 py-2.5 mx-1 text-sm font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300">
                                     Remove
                                 </button>
-                                `;
-                            return html;
+                            `;
                         }
                     }
-                ],
+                ]
             });
         });
     </script>
