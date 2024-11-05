@@ -8,7 +8,7 @@
 
                     <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be
                     displayed (e.g 408 x 120  pixels) -->
-                    <img src="../images/logo.jpg" width="204" height="60" alt="footer-logo">
+                    <img src="../images/logo.jpg" width="150" height="60" alt="footer-logo">
 
                     <!-- Text -->
                     <p class="txt-color-05 mt-20">#1 Relaxation spot in Ho Chi Minh City! <br>#Massage, #Skincare, #Relaxation, #Vietnam
@@ -46,7 +46,7 @@
                 <!-- FOOTER COPYRIGHT -->
                 <div style="width: 50%">
                     <div class="footer-copyright">
-                        <p>© 2022 KOCOCHISPA. All Rights Reserved</p>
+                        <p>© 2022 KOKOROSPA. All Rights Reserved</p>
                     </div>
                 </div>
                 <!-- FOOTER INFO -->

@@ -83,7 +83,7 @@
                             let html = '';
                             if (row.status == 0) {
                                 html = `
-                                <button type="button" onclick="confirmed('${row.id}')" class="inline-flex items-center px-5 py-2.5 mx-1 text-sm font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300">
+                                <button type="button" x-on:click="confirmed('${row.id}')" class="inline-flex items-center px-5 py-2.5 mx-1 text-sm font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300">
                                 not confirmed
                                 </button>`;
                             } else {
