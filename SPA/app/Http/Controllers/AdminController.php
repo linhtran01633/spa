@@ -86,19 +86,25 @@ class AdminController extends Controller
 
 
 
-                $arrayMail = [];
-                if($request->user_id) {
-                    $arrayMail[] = User::find($request->user_id)->email;
-                } else {
-                    $users = User::where('status', 0)->get();
-                    foreach($users as $user) {
-                        $arrayMail[] = $user->email;
-                    }
-                }
+                $arrayMail = [
+                    'a.endo00@kokorospa.com.vn',
+                    'quyen.pham@kokorospa.com.vn',
+                    'm.kagawa00@kokorospa.com.vn',
+                    't.iwasa@kokorospa.com.vn',
+                    'support@kokorospa.com.vn',
+                    ];
+                // if($request->user_id) {
+                //     $arrayMail[] = User::find($request->user_id)->email;
+                // } else {
+                //     $users = User::where('status', 0)->get();
+                //     foreach($users as $user) {
+                //         $arrayMail[] = $user->email;
+                //     }
+                // }
 
                 Mail::to($arrayMail)
-                ->cc(['quyen.pham@kokorospa.com.vn'])
-                ->queue(new \App\Mail\BookingMail($request->full_name, $request->date, $request->time));
+                // ->cc(['quyen.pham@kokorospa.com.vn'])
+                ->queue(new \App\Mail\BookingMail($request->full_name, $request->date, $request->time, $request->phone));
 
             });
         } catch (Exception $e) {
