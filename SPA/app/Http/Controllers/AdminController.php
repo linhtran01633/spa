@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Yajra\DataTables\Facades\DataTables;
 
 class AdminController extends Controller
@@ -82,6 +83,22 @@ class AdminController extends Controller
                 $data = $request->only($booking->getFillable());
                 $data['date'] = $date;
                 $booking->fill($data)->save();
+
+
+
+                $arrayMail = [];
+                if($request->user_id) {
+                    $arrayMail[] = User::find($request->user_id)->email;
+                } else {
+                    $users = User::where('status', 0)->get();
+                    foreach($users as $user) {
+                        $arrayMail[] = $user->email;
+                    }
+                }
+
+                Mail::to($arrayMail)
+                ->cc(['quyen.pham@kokorospa.com.vn'])
+                ->queue(new \App\Mail\BookingMail($request->full_name, $request->date, $request->time));
 
             });
         } catch (Exception $e) {
