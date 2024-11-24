@@ -26,6 +26,8 @@
     "date" : "Date",
     "time" : "Time",
     "confirm" : "Confirm",
+    "booking_info" : "Booking information",
+    "random" : "random",
 
     "no_slots" : "no slots",
     "has_slots" : "has slots",

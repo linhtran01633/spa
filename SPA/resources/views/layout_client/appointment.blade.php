@@ -205,7 +205,7 @@
             <div class="step">
                 <div class="text-center">
                     <br>
-                    <strong>Booking information</strong><br><br>
+                    <strong>{{__('booking_info')}}</strong><br><br>
                 </div>
                 <div class="row" style="width:95%; margin: 0 auto">
                     <div class="col-md-6">
@@ -249,9 +249,9 @@
                 <br>
 
                 <div style="width:95%; margin: 0 auto">
-                    <h5>{{__('staft')}}</h5>
+                    <h5>{{__('staff')}}</h5>
                     <select id="staff" class="form-control rounded text-left">
-                        <option value="">Ngẫu nhiên</option>
+                        <option value="">{{__('random')}}</option>
                         @foreach ($users as $item)
                             <option value="{{$item->id}}">{{$item->name}}</option>
                         @endforeach
@@ -679,11 +679,33 @@
                 } else if (!time) {
                     alert('Please enter time');
                 } else {
+                    let service_text = '';
+                    if(service.value == 1) {
+                        service_text = '{{__('menu.service.service1')}}';
+                    } else if(service.value == 2) {
+                        service_text = '{{__('menu.service.service2')}}';
+                    } else if(service.value == 3) {
+                        service_text = '{{__('menu.service.service3')}}';
+                    } else if(service.value == 4) {
+                        service_text = '{{__('menu.service.service4')}}';
+                    } else if(service.value == 5) {
+                        service_text = '{{__('menu.service.service5')}}';
+                    } else if(service.value == 6) {
+                        service_text = '{{__('menu.service.service6')}}';
+                    } else if(service.value == 7) {
+                        service_text = '{{__('menu.service.service7')}}';
+                    } else if(service.value == 8) {
+                        service_text = '{{__('menu.service.service8')}}';
+                    } else if(service.value == 9) {
+                        service_text = '{{__('menu.service.service9')}}';
+                    } else if(service.value == 10) {
+                        service_text = '{{__('menu.service.service10')}}';
+                    }
 
                     $('#full_name_text').text(fullname.value);
                     $('#phone_text').text(phone.value);
                     $('#email_text').text(email.value);
-                    $('#service_text').text(service.value);
+                    $('#service_text').text(service_text);
                     $('#staff_text').text(staff.value);
                     $('#date_text').text(date);
                     $('#time_text').text(time);

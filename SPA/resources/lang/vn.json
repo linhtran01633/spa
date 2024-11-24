@@ -25,6 +25,8 @@
     "date" : "Ngày",
     "time" : "Thời gian",
     "confirm" : "Xác nhận",
+    "booking_info" : "Thông tin đặt chỗ",
+    "random" : "Ngẫu nhiên",
 
     "no_slots" : "hết chỗ",
     "has_slots" : "còn chỗ",
