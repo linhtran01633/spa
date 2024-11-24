@@ -295,7 +295,7 @@
                             <input type="radio" id="time_select1" name="time_select" value="09:30">
                             <div class="time-slot-content">
                                 <div class="text-center">09:30</div>
-                                <div class="text-center status">hết chổ</div>
+                                <div class="text-center status">{{ __('has_slots')}}</div>
                             </div>
                         </label>
                     </div>
