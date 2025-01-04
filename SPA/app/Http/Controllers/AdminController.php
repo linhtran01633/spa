@@ -87,11 +87,7 @@ class AdminController extends Controller
 
 
                 $arrayMail = [
-                    'a.endo00@kokorospa.com.vn',
-                    'quyen.pham@kokorospa.com.vn',
-                    'm.kagawa00@kokorospa.com.vn',
-                    't.iwasa@kokorospa.com.vn',
-                    'support@kokorospa.com.vn',
+                    'kokorospaservices@gmail.com',
                     ];
                 // if($request->user_id) {
                 //     $arrayMail[] = User::find($request->user_id)->email;
@@ -102,9 +98,7 @@ class AdminController extends Controller
                 //     }
                 // }
 
-                Mail::to($arrayMail)
-                // ->cc(['quyen.pham@kokorospa.com.vn'])
-                ->queue(new \App\Mail\BookingMail($request->full_name, $request->date, $request->time, $request->phone));
+                Mail::to($arrayMail)->queue(new \App\Mail\BookingMail($request->full_name, $request->date, $request->time, $request->phone));
 
             });
         } catch (Exception $e) {
