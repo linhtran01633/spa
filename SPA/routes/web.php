@@ -25,14 +25,6 @@ Route::get('locale/{locale}', function ($locale) {
     return redirect()->back();
 });
 
-Route::get('/top', function () {
-    return view('maintenance');
-});
-
-Route::get('/index', function () {
-    return view('index');
-});
-
 Route::get('/', function () {
     return view('top');
 });

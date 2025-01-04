@@ -22,7 +22,7 @@
         }
 
         .img0 {
-            aspect-ratio: 6 / 4;
+            aspect-ratio: 5/5
         }
 
         img {
@@ -52,7 +52,7 @@
             @for ($i = 0 ; $i < 10 ; $i++)
                 <div>
                     <img class="w-full h-full @if($i == 0) img0 @endif" src="/images/top/img{{$i}}.webp" alt="img">
-                </div>
+                </div>''
             @endfor
         </div>
     </div>
