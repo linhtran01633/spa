@@ -22,7 +22,14 @@
         }
 
         .img0 {
-            aspect-ratio: 5/5
+            aspect-ratio: 5 / 5;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .div0 {
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         img {
@@ -50,9 +57,9 @@
     <div class="container">
         <div class="mx-auto">
             @for ($i = 0 ; $i < 10 ; $i++)
-                <div>
+                <div class="@if($i == 0) div0 @endif">
                     <img class="w-full h-full @if($i == 0) img0 @endif" src="/images/top/img{{$i}}.webp" alt="img">
-                </div>''
+                </div>
             @endfor
         </div>
     </div>
