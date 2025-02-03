@@ -94,21 +94,21 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>{{__('full_name')}}<span class="text-danger">*</span></label>
-                                        <input type="text" name="fullname" value="" class="form-control rounded text-left" placeholder="Họ tên của bạn">
+                                        <input type="text" name="fullname" value="" class="form-control rounded text-left" placeholder="{{__('full_name_placeholder')}}">
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>{{__('phone')}}<span class="text-danger">*</span></label>
-                                        <input type="text" name="telephone" value="" class="form-control rounded text-left" placeholder="09xxxxxxx" >
+                                        <input type="text" name="telephone" value="" class="form-control rounded text-left" placeholder="{{__('phone_placeholder')}}" >
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>{{__('email')}}</label>
-                                        <input type="email" name="email" value="" value="" class="form-control rounded text-left" placeholder="email(nếu có)">
+                                        <input type="email" name="email" value="" value="" class="form-control rounded text-left" placeholder="{{__('email_placeholder')}}">
                                     </div>
                                 </div>
 

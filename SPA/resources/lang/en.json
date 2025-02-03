@@ -19,9 +19,12 @@
     "name_spa" : "KOKORO SPA",
 
     "phone" : "Phone",
+    "phone_placeholder" : "09xxxxxxx",
     "appointment" : "appointment",
     "full_name" : "Full name",
+    "full_name_placeholder" : "Full name",
     "email" : "Email",
+    "email_placeholder" : "Email (if any)",
     "staff" : "Staff",
     "branch" : "Branch",
     "date" : "Date",

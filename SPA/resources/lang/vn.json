@@ -20,7 +20,9 @@
 
     "appointment" : "đặt hẹn",
     "full_name" : "Họ và tên",
+    "full_name_placeholder" : "Họ và tên của bạn",
     "email" : "Email",
+    "email_placeholder" : "Email(nếu có)",
     "staff" : "Nhân viên",
     "branch" : "Chi nhánh",
     "date" : "Ngày",
@@ -51,6 +53,7 @@
     "about_us.comment2" : "Tên 'Kokoro' (心) trong tiếng Nhật có nghĩa là 'tâm hồn', thể hiện triết lý chăm sóc toàn diện cả về thể chất lẫn tinh thần, mang lại một trạng thái thư thái và an yên sau mỗi liệu pháp. \nĐồng thời cũng mang ý nghĩa “sự phục vụ đến từ trái tim” Omotenashi đến từ Nhật Bản.",
 
     "phone" : "Số điện thoại",
+    "phone_placeholder" : "09xxxxxxx",
     "address" : "Địa chỉ",
     "contract" : "Liên hệ",
 

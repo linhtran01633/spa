@@ -20,7 +20,9 @@
 
     "appointment" : "予定",
     "full_name" : "フルネーム",
+    "full_name_placeholder" : "あなたの名前",
     "email" : "メール",
+    "email_placeholder" : "メールアドレス（ある場合）",
     "staff" : "スタッフ",
     "branch" : "支店",
     "date" : "日",
@@ -51,6 +53,7 @@
     "about_us.comment2" : "「心」という名前は日本語で「魂」を意味し、体と心の両方の包括的なケアの哲学を表しており、各治療後にリラクゼーションと平安の状態をもたらします。それは同時に、「心からのサービス」を意味するものでもあります。[おもてなし] は日本発祥です。",
 
     "phone" : "電話",
+    "phone_placeholder" : "09xxxxxxx",
     "address" : "住所",
     "contract" : "連絡先",
 
