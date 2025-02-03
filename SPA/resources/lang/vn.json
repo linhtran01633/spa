@@ -22,11 +22,20 @@
     "full_name" : "Họ và tên",
     "email" : "Email",
     "staff" : "Nhân viên",
+    "branch" : "Chi nhánh",
     "date" : "Ngày",
-    "time" : "Thời gian",
+    "time" : "Khung giờ",
     "confirm" : "Xác nhận",
     "booking_info" : "Thông tin đặt chỗ",
     "random" : "Ngẫu nhiên",
+    "service" : "Dịch vụ",
+    "request" : "Yêu cầu",
+    "title_appointment" : "TẠO ĐẶT HẸN CỦA BẠN VỚI CHÚNG TÔI",
+
+    "please_enter_full_name" : "Vui lòng nhập họ và tên",
+    "please_enter_phone" : "Vui lòng nhập số điện thoại",
+    "please_enter_date" : "Vui lòng chọn ngày",
+    "please_enter_time" : "Vui lòng chọn khung giờ",
 
     "no_slots" : "hết chỗ",
     "has_slots" : "còn chỗ",
@@ -41,7 +50,7 @@
     "about_us.comment1" : "Tọa lạc trên con đường sầm uất và nhiệt độ oi bức đặc trưng của khu vực đường Hai Bà Trưng, Quận 3,こころスパ (Kokoro Spa) chỉ tập trung vào việc mang lại sự cân bằng và chữa lành cho tâm hồn thông qua các liệu pháp thư giãn và phục hồi sức khỏe. \nPhong cách massage này kết hợp các kỹ thuật truyền thống của Nhật Bản, bao gồm Shiatsu, một liệu pháp dùng áp lực nhẹ nhàng lên các huyệt đạo trên cơ thể để kích thích tuần hoàn và giảm căng thẳng.",
     "about_us.comment2" : "Tên 'Kokoro' (心) trong tiếng Nhật có nghĩa là 'tâm hồn', thể hiện triết lý chăm sóc toàn diện cả về thể chất lẫn tinh thần, mang lại một trạng thái thư thái và an yên sau mỗi liệu pháp. \nĐồng thời cũng mang ý nghĩa “sự phục vụ đến từ trái tim” Omotenashi đến từ Nhật Bản.",
 
-    "phone" : "Điện thoại",
+    "phone" : "Số điện thoại",
     "address" : "Địa chỉ",
     "contract" : "Liên hệ",
 
