@@ -193,5 +193,66 @@
     "access.working_hours.last_entry.comment" : "21:30",
     "access.working_hours.note" : "*Chỉ nhận dịch vụ tối đa 60 phút",
 
+
+    "services.optgroup1" : "Combo",
+    "services.optgroup2" : "DỊCH VỤ",
+    "services.optgroup3" : "Dịch vụ thêm",
+    "services.optgroup4" : "Facial",
+    "services.optgroup5" : "Gội đầu dưỡng sinh",
+    "services.optgroup6" : "Massage",
+    "services.optgroup7" : "Dịch vụ khác",
+
+
+    "services.value95" : "Relaxing Combo (body 60 + facial 45)",
+    "services.value82" : "SAKURA COMBO",
+    "services.value81" : "SERAPY COMBO",
+    "services.value80" : "ATAMA RAKU COMBO",
+    "services.value79" : "BODY HEAD COMBO",
+    "services.value78" : "MIGAO COMBO",
+    "services.value74" : "Total relaxation Combo 150 phút",
+
+    "services.value94" : "Foot Massage 45 min",
+    "services.value93" : "Foot Massage 30 min",
+    "services.value92" : "CVG hoặc Massage toàn thân 45 phút",
+    "services.value91" : "Cổ vai gáy 30 phút/ Pain 30 min",
+    "services.value89" : "Điều tỏi - Chili Garlic Cashew Nuts (large)",
+    "services.value88" : "Điều tỏi - Chili Garlic Cashew Nuts (small)",
+    "services.value87" : "Điều muối - Salted Cashew Nuts (large)",
+    "services.value86" : "Điều muối - Salted Cashew Nuts (small)",
+
+    "services.value90" : "Mặt nạ (bao gồm TBC)/ Facial Mask (Including Exfoliation)",
+    "services.value85" : "TIP DV 120p",
+    "services.value84" : "TIP DV 90p",
+    "services.value83" : "TIP DV 60p",
+    "services.value75" : "Giảm stress 15 phút (15 minute stress relief massage)",
+    "services.value72" : "Phòng VIP/ VIP ROOM 2 NGƯỜI",
+    "services.value71" : "Phòng VIP/ VIP ROOM 1 NGƯỜI",
+    "services.value68" : "Tắm sạch/ Shower",
+    "services.value67" : "Dịch vụ xông hơi/ Sauna",
+    "services.value64" : "Gội đầu dưỡng sinh/Head Shampoo Relaxing Massage 30 phút",
+    "services.value55" : "Tinh dầu Aroma/ Aroma Essential Oil",
+    "services.value54" : "Mặt nạ gừng/ Ginger Packing",
+    "services.value53" : "Đá nóng/  Hot stone",
+
+    "services.value77" : "Lymphatic Facial",
+    "services.value76" : "Facial Cup",
+    "services.value70" : "Chăm sóc da cơ bản/ Facial 75 phút",
+    "services.value69" : "Chăm sóc da cơ bản/ Facial 45 phút",
+
+    "services.value66" : "Gội đầu Kokoro spa (Hair treatment) 90 phút",
+    "services.value65" : "Gội đầu thư giãn massage cổ vai gáy/ Relaxing shampoo, neck and shoulder massage 45 minutes",
+
+    "services.value63" : "Massage Chân/Foot Massage 90 phút",
+    "services.value62" : "Massage Chân/Foot Massage 60 phút",
+    "services.value61" : "Massage trị liệu cổ vai gáy/Neck and shoulder treatment 90 phút",
+    "services.value60" : "Massage trị liệu cổ vai gáy/Neck and shoulder treatment 60 phút",
+    "services.value59" : "Massage Thái/Thai massage 90 phút",
+    "services.value58" : "Massage Thái/Thai massage  75 phút",
+    "services.value57" : "Massage bấm huyệt Nhật Bản/ Shiatsu Massage 120 phút",
+    "services.value56" : "Massage bấm huyệt Nhật Bản/ Shiatsu Massage 90 phút",
+    "services.value52" : "Massage truyền thống Nhật Bản/Traditional Japanese Massage 120 phút",
+    "services.value51" : "Massage truyền thống Nhật Bản/Traditional Japanese Massage 90 phút",
+    "services.value50" : "Massage truyền thống Nhật Bản/Traditional Japanese Massage 60 phút",
+
     "end" : ""
 }

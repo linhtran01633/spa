@@ -195,5 +195,66 @@
     "access.working_hours.note" : "*Only receive service for maximum 60 minutes",
 
 
+    "services.optgroup1" : "Combo",
+    "services.optgroup2" : "Services",
+    "services.optgroup3" : "Additional Services",
+    "services.optgroup4" : "Facial",
+    "services.optgroup5" : "Relaxing Hair Treatment",
+    "services.optgroup6" : "Massage",
+    "services.optgroup7" : "Other services",
+
+    "services.value95" : "Relaxing Combo (body 60 + facial 45)",
+    "services.value82" : "SAKURA COMBO)",
+    "services.value81" : "SERAPY COMBO",
+    "services.value80" : "ATAMA RAKU COMBO",
+    "services.value79" : "BODY HEAD COMBO",
+    "services.value78" : "MIGAO COMBO",
+    "services.value74" : "Total relaxation Combo 150 minutes",
+
+    "services.value94" : "Foot Massage 45 min",
+    "services.value93" : "Foot Massage 30 min",
+    "services.value92" : "CVG or Full Body Massage 45 minutes",
+    "services.value91" : "Neck, Shoulder, and Back Massage 30 minutes / Pain 30 min",
+    "services.value89" : "Chili Garlic Cashew Nuts (large)",
+    "services.value88" : "Chili Garlic Cashew Nuts (small)",
+    "services.value87" : "Salted Cashew Nuts (large)",
+    "services.value86" : "Salted Cashew Nuts (small)",
+
+    "services.value90" : "Facial Mask (Including Exfoliation)",
+    "services.value85" : "TIP Service 120p",
+    "services.value84" : "TIP Service 90p",
+    "services.value83" : "TIP Service 60p",
+    "services.value75" : "15-minute stress relief massage",
+    "services.value72" : "VIP Room for 2 People",
+    "services.value71" : "VIP Room for 1 Person",
+    "services.value68" : "Shower",
+    "services.value67" : "Sauna Service",
+    "services.value64" : "Relaxing Head Shampoo Massage 30 minutes",
+    "services.value55" : "Aroma Essential Oil",
+    "services.value54" : "Ginger Packing",
+    "services.value53" : "Hot Stone Therapy",
+
+
+    "services.value77" : "Lymphatic Facial",
+    "services.value76" : "Facial Cupping",
+    "services.value70" : "Basic Facial Care 75 minutes",
+    "services.value69" : "Basic Facial Care 45 minutes",
+
+    "services.value66" : "Kokoro Spa Hair Treatment 90 minutes",
+    "services.value65" : "Relaxing Shampoo, Neck, and Shoulder Massage 45 minutes",
+
+    "services.value63" : "Foot Massage 90 minutes",
+    "services.value62" : "Foot Massage 60 minutes",
+    "services.value61" : "Neck and Shoulder Treatment Massage 90 minutes",
+    "services.value60" : "Neck and Shoulder Treatment Massage 60 minutes",
+    "services.value59" : "Thai Massage 90 minutes",
+    "services.value58" : "Thai Massage 75 minutes",
+    "services.value57" : "Japanese Shiatsu Massage 120 minutes",
+    "services.value56" : "Japanese Shiatsu Massage 90 minutes",
+    "services.value52" : "Traditional Japanese Massage 120 minutes",
+    "services.value51" : "Traditional Japanese Massage 90 minutes",
+    "services.value50" : "Traditional Japanese Massage 60 minutes",
+
+
     "end" : ""
 }

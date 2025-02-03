@@ -186,64 +186,64 @@
                                     <div class="form-group">
                                         <label>{{__('service')}}</label>
                                         <select data-rel="select2" multiple="multiple" name="service_groups[]" class="form-control" style="width: 100%;">
-                                            <optgroup label="Combo">
-                                                <option value="95">Relaxing Combo (body 60 + facial 45)</option>
-                                                <option value="82">SAKURA COMBO</option>
-                                                <option value="81">SERAPY COMBO</option>
-                                                <option value="80">ATAMA RAKU COMBO</option>
-                                                <option value="79">BODY HEAD COMBO</option>
-                                                <option value="78">MIGAO COMBO</option>
-                                                <option value="74">Total relaxation Combo 150 phút</option>
+                                            <optgroup label="{{__('services.optgroup1')}}">
+                                                <option value="95">{{__('services.value95')}}</option>
+                                                <option value="82">{{__('services.value82')}}</option>
+                                                <option value="81">{{__('services.value81')}}</option>
+                                                <option value="80">{{__('services.value80')}}</option>
+                                                <option value="79">{{__('services.value79')}}</option>
+                                                <option value="78">{{__('services.value78')}}</option>
+                                                <option value="74">{{__('services.value74')}}</option>
                                             </optgroup>
-                                            <optgroup label="DỊCH VỤ">
-                                                <option value="94">Foot Massage 45 min</option>
-                                                <option value="93">Foot Massage 30 min</option>
-                                                <option value="92">CVG hoặc Massage toàn thân 45 phút</option>
-                                                <option value="91">Cổ vai gáy 30 phút/ Pain 30 min</option>
-                                                <option value="89">Điều tỏi - Chili Garlic Cashew Nuts (large)</option>
-                                                <option value="88">Điều tỏi - Chili Garlic Cashew Nuts (small)</option>
-                                                <option value="87">Điều muối - Salted Cashew Nuts (large)</option>
-                                                <option value="86">Điều muối - Salted Cashew Nuts (small)</option>
+                                            <optgroup label="{{__('services.optgroup2')}}">
+                                                <option value="94">{{__('services.value94')}}</option>
+                                                <option value="93">{{__('services.value93')}}</option>
+                                                <option value="92">{{__('services.value92')}}</option>
+                                                <option value="91">{{__('services.value91')}}</option>
+                                                <option value="89">{{__('services.value89')}}</option>
+                                                <option value="88">{{__('services.value88')}}</option>
+                                                <option value="87">{{__('services.value87')}}</option>
+                                                <option value="86">{{__('services.value86')}}</option>
                                             </optgroup>
-                                            <optgroup label="Dịch vụ thêm">
-                                                <option value="90">Mặt nạ (bao gồm TBC)/ Facial Mask (Including Exfoliation)</option>
-                                                <option value="85">TIP DV 120p</option>
-                                                <option value="84">TIP DV 90p</option>
-                                                <option value="83">TIP DV 60p</option>
-                                                <option value="75">Giảm stress 15 phút (15 minute stress relief massage)</option>
-                                                <option value="72">Phòng VIP/ VIP ROOM 2 NGƯỜI</option>
-                                                <option value="71">Phòng VIP/ VIP ROOM 1 NGƯỜI</option>
-                                                <option value="68">Tắm sạch/ Shower</option>
-                                                <option value="67">Dịch vụ xông hơi/ Sauna</option>
-                                                <option value="64">Gội đầu dưỡng sinh/Head Shampoo Relaxing Massage 30 phút</option>
-                                                <option value="55">Tinh dầu Aroma/ Aroma Essential Oil</option>
-                                                <option value="54">Mặt nạ gừng/ Ginger Packing</option>
-                                                <option value="53">Đá nóng/  Hot stone</option>
+                                            <optgroup label="{{__('services.optgroup3')}}">
+                                                <option value="90">{{__('services.value90')}}</option>
+                                                <option value="85">{{__('services.value85')}}</option>
+                                                <option value="84">{{__('services.value84')}}</option>
+                                                <option value="83">{{__('services.value83')}}</option>
+                                                <option value="75">{{__('services.value75')}}</option>
+                                                <option value="72">{{__('services.value72')}}</option>
+                                                <option value="71">{{__('services.value71')}}</option>
+                                                <option value="68">{{__('services.value68')}}</option>
+                                                <option value="67">{{__('services.value67')}}</option>
+                                                <option value="64">{{__('services.value64')}}</option>
+                                                <option value="55">{{__('services.value55')}}</option>
+                                                <option value="54">{{__('services.value54')}}</option>
+                                                <option value="53">{{__('services.value53')}}</option>
                                             </optgroup>
-                                            <optgroup label="Facial">
-                                                <option value="77">Lymphatic Facial</option>
-                                                <option value="76">Facial Cup</option>
-                                                <option value="70">Chăm sóc da cơ bản/ Facial 75 phút</option>
-                                                <option value="69">Chăm sóc da cơ bản/ Facial 45 phút</option>
+                                            <optgroup label="{{__('services.optgroup4')}}">
+                                                <option value="77">{{__('services.value77')}}</option>
+                                                <option value="76">{{__('services.value76')}}</option>
+                                                <option value="70">{{__('services.value70')}}</option>
+                                                <option value="69">{{__('services.value69')}}</option>
                                             </optgroup>
-                                            <optgroup label="Gội đầu dưỡng sinh">
-                                                <option value="66">Gội đầu Kokoro spa (Hair treatment) 90 phút</option>
-                                                <option value="65">Gội đầu thư giãn massage cổ vai gáy/ Relaxing shampoo, neck and shoulder massage 45 minutes</option>
+                                            <optgroup label="{{__('services.optgroup5')}}">
+                                                <option value="66">{{__('services.value66')}}</option>
+                                                <option value="65">{{__('services.value65')}}</option>
                                             </optgroup>
-                                            <optgroup label="Massage">
-                                                <option value="63">Massage Chân/Foot Massage 90 phút</option>
-                                                <option value="62">Massage Chân/Foot Massage 60 phút</option>
-                                                <option value="61">Massage trị liệu cổ vai gáy/Neck and shoulder treatment 90 phút</option>
-                                                <option value="60">Massage trị liệu cổ vai gáy/Neck and shoulder treatment 60 phút</option>
-                                                <option value="59">Massage Thái/Thai massage 90 phút</option>
-                                                <option value="58">Massage Thái/Thai massage  75 phút</option>
-                                                <option value="57">Massage bấm huyệt Nhật Bản/ Shiatsu Massage 120 phút</option>
-                                                <option value="56">Massage bấm huyệt Nhật Bản/ Shiatsu Massage 90 phút</option>
-                                                <option value="52">Massage truyền thống Nhật Bản/Traditional Japanese Massage 120 phút</option>
-                                                <option value="51">Massage truyền thống Nhật Bản/Traditional Japanese Massage 90 phút</option>
-                                                <option value="50">Massage truyền thống Nhật Bản/Traditional Japanese Massage 60 phút</option>
+                                            <optgroup label="{{__('services.6')}}">
+                                                <option value="63">{{__('services.value63')}}</option>
+                                                <option value="62">{{__('services.value62')}}</option>
+                                                <option value="61">{{__('services.value61')}}</option>
+                                                <option value="60">{{__('services.value60')}}</option>
+                                                <option value="59">{{__('services.value59')}}</option>
+                                                <option value="58">{{__('services.value58')}}</option>
+                                                <option value="57">{{__('services.value57')}}</option>
+                                                <option value="56">{{__('services.value56')}}</option>
+                                                <option value="52">{{__('services.value52')}}</option>
+                                                <option value="51">{{__('services.value51')}}</option>
+                                                <option value="50">{{__('services.value50')}}</option>
                                             </optgroup>
-                                            <optgroup label="Dịch vụ khác"></optgroup>
+                                            <optgroup label="{{__('services.optgroup7')}}"></optgroup>
                                         </select>
                                     </div>
                                 </div>

@@ -193,5 +193,66 @@
     "access.working_hours.last_entry.comment" : "21:30",
     "access.working_hours.note" : "*最長60分間のみサービスを受けることができます",
 
+
+    "services.optgroup1" : "コンボ",
+    "services.optgroup2" : "サービス",
+    "services.optgroup3" : "追加サービス",
+    "services.optgroup4" : "フェイシャル",
+    "services.optgroup5" : "リラクシングヘッドトリートメント",
+    "services.optgroup6" : "マッサージ",
+    "services.optgroup7" : "その他のサービス",
+
+    "services.value95" : "リラクシングコンボ（ボディ60分＋フェイシャル45分）",
+    "services.value82" : "サクラコンボ",
+    "services.value81" : "セラピーコンボ",
+    "services.value80" : "アタマラクコンボ",
+    "services.value79" : "ボディ＆ヘッドコンボ",
+    "services.value78" : "ミガオコンボ",
+    "services.value74" : "トータルリラクゼーションコンボ 150分",
+
+    "services.value94" : "フットマッサージ 45分",
+    "services.value93" : "フットマッサージ 30分",
+    "services.value92" : "CVGまたは全身マッサージ 45分",
+    "services.value91" : "首・肩・背中マッサージ 30分 / 痛み緩和 30分",
+    "services.value89" : "チリガーリックカシューナッツ（大）",
+    "services.value88" : "チリガーリックカシューナッツ（小）",
+    "services.value87" : "塩味カシューナッツ（大）",
+    "services.value86" : "塩味カシューナッツ（小）",
+
+    "services.value90" : "フェイシャルマスク（角質除去含む）",
+    "services.value85" : "TIPサービス 120分",
+    "services.value84" : "TIPサービス 90分",
+    "services.value83" : "TIPサービス 60分",
+    "services.value75" : "15分ストレス解消マッサージ",
+    "services.value72" : "VIPルーム（2名様用）",
+    "services.value71" : "VIPルーム（1名様用）",
+    "services.value68" : "シャワー",
+    "services.value67" : "サウナサービス",
+    "services.value64" : "リラクシングヘッドシャンプーマッサージ 30分",
+    "services.value55" : "アロマエッセンシャルオイル",
+    "services.value54" : "ジンジャーパック",
+    "services.value53" : "ホットストーンセラピー",
+
+    "services.value77" : "リンパフェイシャル",
+    "services.value76" : "フェイシャルカッピング",
+    "services.value70" : "基本フェイシャルケア 75分",
+    "services.value69" : "基本フェイシャルケア 45分",
+
+    "services.value66" : "ココロスパヘアトリートメント 90分",
+    "services.value65" : "リラクシングシャンプー、首・肩マッサージ 45分",
+
+
+    "services.value63" : "フットマッサージ 90分",
+    "services.value62" : "フットマッサージ 60分",
+    "services.value61" : "首・肩治療マッサージ 90分",
+    "services.value60" : "首・肩治療マッサージ 60分",
+    "services.value59" : "タイマッサージ 90分",
+    "services.value58" : "タイマッサージ 75分",
+    "services.value57" : "日本式指圧マッサージ 120分",
+    "services.value56" : "日本式指圧マッサージ 90分",
+    "services.value52" : "伝統日本マッサージ 120分",
+    "services.value51" : "伝統日本マッサージ 90分",
+    "services.value50" : "伝統日本マッサージ 60分",
+
     "end" : ""
 }
