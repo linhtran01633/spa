@@ -2,11 +2,10 @@
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/select2.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap-datetimepicker.min.css') }}" />
-
     <script src="{{ URL::asset('js/select2.min.js') }}" type="text/javascript"></script>
     <script src="{{ URL::asset('js/moment-with-locales.min.js') }}"></script>
     <script src="{{ URL::asset('js/bootstrap-datetimepicker.min.js') }}" type="text/javascript"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
         #fixNav {
             color: #5f5842 !important;
@@ -67,6 +66,108 @@
         .booking-form {
             background-color: #F4F5FA;
         }
+
+        .wapper_popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .section_popup {
+            top: 50%;
+            left: 50%;
+            margin-top: 21px;
+            width: 449px;
+            overflow: auto;
+            height: auto;
+            max-height: 80vh;
+            position: fixed;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+        }
+        .title_popup{
+            color: white;
+            padding: 10px;
+            background-color: #0180c7;
+        }
+        .title_popup h3{
+            margin: 0;
+        }
+        .container_popup {
+            display: flex;
+            padding: 10px;
+            align-items: flex-start;
+            justify-content: space-between;
+            border-bottom: 1px solid #0180c7;
+        }
+        .container_popup .p50 {
+            width:50%;
+        }
+        .footer_popup{
+            color: white;
+            padding: 10px 40px;
+            background-color: #0180c7;
+        }
+        .qr{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .note_popup {
+            padding: 0px 50px;
+        }
+        #countdown {
+            top: 13px;
+            right: 15px;
+            position: absolute;
+        }
+
+        /** Loading animation */
+        .icon-loadding {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            position: fixed;
+        }
+        .loadding-animation {
+            top: 50%;
+            left: 50%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+        }
+
+        .loadding-animation:after {
+            content: " ";
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 8px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            border-color: #4c90bf transparent #4c90bf transparent;
+            animation: loadding-animation 1.2s linear infinite;
+        }
+
+        @keyframes loadding-animation {
+            0% {
+            transform: rotate(0deg);
+            }
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+
     </style>
 @endsection
 @section('content')
@@ -83,8 +184,8 @@
                         </h4>
                         </div>
                         <p class="mb-0 text-center">
-                        <strong>{{__('address')}} : <span><i class="fa fa-map-marker"></i> 371 Hai Bà Trưng, Phường Võ Thị Sáu, Quận 3</span><br></strong>
-                        <strong> {{__('phone')}}: <span><i class="icon icon-call-end"></i> 0865008868</span></strong>
+                        <strong>{{__('address')}} : <span><i class="fa fa-map-marker"></i> {{__('address_detail')}}</span><br></strong>
+                        <strong> {{__('phone')}}: <span><i class="icon icon-call-end"></i> {{__('hot_line_number')}}</span></strong>
                         </p>
                     </div>
 
@@ -280,6 +381,28 @@
     @endphp
     @section('scripts')
         <script>
+            var response_title = @json(__('layout_popup_title'));
+            var customer_info = @json(__('customer_info'));
+            var full_name = @json(__('full_name'));
+            var phone = @json(__('phone'));
+            var email = @json(__('email'));
+
+            console.log(customer_info);
+
+            var appointment_info = @json(__('appointment_info'));
+            var appointment_time = @json(__('appointment_time'));
+            var booking_code = @json(__('booking_code'));
+
+            var expected_service = @json(__('expected_service'));
+            var note_popup = @json(__('note_popup'));
+
+            var address = @json(__('address'));
+            var address_detail = @json(__('address_detail'));
+
+            var name_spa = @json(__('name_spa'));
+            var hot_line = @json(__('hot_line'));
+            var hot_line_number = @json(__('hot_line_number'));
+
             function choose_time_picker(index, time) {
                 $(".time_open").removeClass('active');
                 $(".time_open_" + index).addClass('active');
@@ -322,7 +445,7 @@
 
                 // submit form
                 $("#submit_form").click(function() {
-
+                    $('.booking-form').append(`<div class="icon-loadding"><div class="loadding-animation"></div></div>`);
 
                     if($("input[name='fullname']").val() == '') {
                         alert("{{__('please_enter_full_name')}}");
@@ -346,19 +469,29 @@
 
                     let date = document.querySelector(".date_picker").value; // Lấy ngày
                     let time = document.querySelector(".time_picker").value; // Lấy giờ
-                    let dateTime = date + " " + time + ":00"; // Gộp ngày + giờ
+
+                    let dateTime = new Date(`${date}T${time}:00`);
+
+                    let day = String(dateTime.getDate()).padStart(2, "0");
+                    let month = String(dateTime.getMonth() + 1).padStart(2, "0"); // getMonth() trả về 0-11
+                    let year = dateTime.getFullYear();
+                    let hours = String(dateTime.getHours()).padStart(2, "0");
+                    let minutes = String(dateTime.getMinutes()).padStart(2, "0");
+                    let seconds = String(dateTime.getSeconds()).padStart(2, "0");
+
+                    let data_time_format = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
 
 
                     let dataForm = {
                         status : "5",
-                        date_time : dateTime,
+                        date_time : data_time_format,
                         customer_old_new : "2",
                         note : $("textarea[name='note']").val(),
                         fullname : $("input[name='fullname']").val(),
                         telephone: $("input[name='telephone']").val(),
                         service_groups: $("select[name='service_groups[]']").val(),
                     }
-                    console.log(dataForm);
+
 
                     fetch("https://daruma.idspa.vn/api/merchant/login/login", {
                         method: "POST",
@@ -373,7 +506,6 @@
                     })
                     .then(response => response.json())
                     .then(data => {
-                        console.log("Response:", data);
                         if (data.status == 'ok') {
                             fetch("https://daruma.idspa.vn/api/manager/appointment/aptForm", {
                                 method: "POST",
@@ -384,17 +516,126 @@
                                 },
                                 body: new URLSearchParams(dataForm)
                             })
-                            .then(respons1 => respons1.json())
-                            .then(data1 => console.log("Response:", data1))
-                            .catch(error1 => console.error("Lỗi:", error1));
+                            .then(respons1 => respons1.text())  // Đổi từ .json() thành .text()
+                            .then(text => {
+                                // Tìm vị trí JSON bắt đầu bằng { hoặc [
+                                const jsonStart = text.indexOf("{");
+                                if (jsonStart !== -1) {
+                                    const jsonString = text.substring(jsonStart);  // Cắt phần JSON
+                                    return JSON.parse(jsonString);  // Parse JSON
+                                }
+                                throw new Error("Không tìm thấy JSON hợp lệ trong response");
+                            })
+                            .then(data1 => {
+                                if (data1.status == 'ok') {
+                                    fetch(`https://daruma.idspa.vn/api/manager/appointment/details/${data1.data}`, {
+                                        method: "GET",
+                                        headers: {
+                                            "IDSPA_KEY": "idspa_key_api",
+                                            "USER-TOKEN": data.user_token,
+                                            "Content-Type": "application/x-www-form-urlencoded"
+                                        },
+                                    })
+                                    .then(respons1 => respons1.text())  // Đổi từ .json() thành .text()
+                                    .then(text => {
+                                        // Tìm vị trí JSON bắt đầu bằng { hoặc [
+                                        const jsonStart = text.indexOf("{");
+                                        if (jsonStart !== -1) {
+                                            const jsonString = text.substring(jsonStart);  // Cắt phần JSON
+                                            return JSON.parse(jsonString);  // Parse JSON
+                                        }
+                                        throw new Error("Không tìm thấy JSON hợp lệ trong response");
+                                    })
+                                    .then(data2 => {
+                                        console.log(data2);
+                                        $('.icon-loadding').remove();
+
+                                        let serviceList = data2?.data?.appointment_details?.service_arr?.map(service => service.service_name).join(", ") || "Không có dịch vụ";
+
+
+                                        $('.booking-form').append(`
+                                            <div class="wapper_popup">
+                                                <div class="section_popup">
+                                                    <div class="title_popup text-center">
+                                                        <h3>${response_title}</h3>
+                                                        <span id="countdown">15</span>
+                                                    </div>
+                                                    <div class="container_popup">
+                                                        <div class="p50 text-center">
+                                                            <h4>${customer_info}</h4>
+                                                            <h5>${full_name}: ${data2?.data?.appointment_details?.customer_name || ''}</h5>
+                                                            <h5>${phone}: ${data2?.data?.appointment_details?.booking_phone || ''}</h5>
+                                                            <h5>${email}: ${data2?.data?.appointment_details?.booking_email || ''}</h5>
+                                                        </div>
+                                                        <div class="p50 text-center">
+                                                            <h4>${appointment_info}</h4>
+                                                            <h5>${appointment_time}:${data2?.data?.appointment_details?.start || ''}</h5>
+                                                            <h5>${booking_code}: <span style="color: red;">${data2?.data?.appointment_details?.booking_code || ''}</span></h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qr">
+                                                        <div id="qrcode"></div>
+                                                    </div>
+                                                    <div class="note_popup text-center">
+                                                        <h5><strong>${expected_service}</strong>:${serviceList}</h5>
+                                                        <h5>${note_popup}</h5>
+                                                    </div>
+
+                                                    <div class="footer_popup text-center">
+                                                        <h4>${name_spa}</h4>
+                                                        <div>
+                                                            ${address}: ${address_detail}
+                                                        </div>
+                                                        <div>
+                                                            ${hot_line}: ${hot_line_number}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        `);
+
+                                        var qr = new QRCode(document.getElementById("qrcode"), {
+                                            text: data2?.data?.appointment_details?.id || '',
+                                            width: 100,
+                                            height: 100,
+                                        });
+
+                                        let timeLeft = 15;
+                                        let countdownInterval = setInterval(() => {
+                                            timeLeft--;
+                                            $('#countdown').text(timeLeft);
+
+                                            if (timeLeft <= 0) {
+                                                clearInterval(countdownInterval);
+                                                $('.icon-loadding').remove();
+                                                document.querySelector('.wapper_popup').remove();
+                                            }
+                                        }, 1000);
+                                    })
+                                    .catch(error2 => {
+                                        $('.icon-loadding').remove();
+                                        console.error("Lỗi:", error2)
+                                        alert(error2);
+                                    });
+                                } else {
+                                    console.log("lỗi" , data1.message);
+                                }
+                            })
+                            .catch(error1 => {
+                                $('.icon-loadding').remove();
+                                console.error("Lỗi:", error1)
+                                alert(error1);
+                            });
                         } else {
                             console.log("Đăng nhập thất bại!");
                         }
                     })
-                    .catch(error => console.error("Lỗi:", error));
-
+                    .catch(error => {
+                        $('.icon-loadding').remove();
+                        console.error("Lỗi:", error)
+                        alert(error);
+                    });
                 });
-
             });
         </script>
     @endsection

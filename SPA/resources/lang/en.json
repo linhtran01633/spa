@@ -55,6 +55,16 @@
 
     "address" : "Address",
     "contract" : "Contract",
+    "address_detail" : "371 Hai Bà Trưng, Phường Võ Thị Sáu, Quận 3",
+    "hot_line" : "Hotline",
+    "hot_line_number" : "0865008868",
+    "layout_popup_title" : "Contact information",
+    "customer_info" : "Customer information",
+    "appointment_info" : "Appointment information",
+    "appointment_time" : "Appointment time",
+    "booking_code" : "Appointment code",
+    "expected_service" : "Expected Service",
+    "note_popup" : "Note: please show the QR code for staff to check the schedule when coming to the store, thank you!",
 
     "note1": "* TIP inclueded, VAT not including",
     "note2": "* Customers who want to use VIP rooms",
@@ -255,6 +265,10 @@
     "services.value51" : "Traditional Japanese Massage 90 minutes",
     "services.value50" : "Traditional Japanese Massage 60 minutes",
 
+
+
+    "facial_and_skincare" : "Facial & Skincare",
+    "facial_and_skincare_detail" : "Kokoro hopes to bring you moments of effective and relaxing service experience!",
 
     "end" : ""
 }

@@ -25,8 +25,8 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="caption-txt white-color">
-                                    <h2>Massage &amp; Relaxing</h2>
-                                    <p>Kokoro hy vọng sẽ mang lại cho quý khách những giây phút trải nghiệm dịch vụ hiệu quả và thư giãn!</p>
+                                    <h2>{{__('facial_and_skincare')}}</h2>
+                                    <p>{!!__('facial_and_skincare_detail')!!}</p>
                                     <a href="#about-4" class="btn btn-md btn-color-02 tra-white-hover">{{__('about_us')}}</a>
                                 </div>
                          </div>
@@ -42,8 +42,8 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="caption-txt white-color">
-                                    <h2>Facial &amp; Skincare</h2>
-                                    <p>Sở hữu làn da mịn màng và khoẻ mạnh sau khi trải nghiệm dịch vụ từ những thiết bị chuyên dụng của chúng tôi.</p>
+                                    <h2>{{__('facial_and_skincare')}}</h2>
+                                    <p>{!!__('facial_and_skincare_detail')!!}</p>
                                     <a href="#about-4" class="btn btn-md btn-color-02 tra-white-hover">{{__('about_us')}}</a>
                                 </div>
                             </div>

@@ -56,6 +56,16 @@
     "phone_placeholder" : "09xxxxxxx",
     "address" : "住所",
     "contract" : "連絡先",
+    "address_detail" : "371 Hai Bà Trưng, Phường Võ Thị Sáu, Quận 3",
+    "hot_line" : "ホットライン",
+    "hot_line_number" : "0865008868",
+    "layout_popup_title" : "連絡先",
+    "customer_info" : "顧客情報",
+    "appointment_info" : "予約情報",
+    "appointment_time" : "予約時間",
+    "booking_code" : "予約コード",
+    "expected_service" : "予想されるサービス",
+    "note_popup" : "注：スタッフが店に来るときにスケジュールを確認するためにQRコードコードを提供してください、ありがとう！",
 
     "note1": "* チップ含む、税抜き",
     "note2": "* VIPルームの使用をご希望のお客様",
@@ -253,6 +263,10 @@
     "services.value52" : "伝統日本マッサージ 120分",
     "services.value51" : "伝統日本マッサージ 90分",
     "services.value50" : "伝統日本マッサージ 60分",
+
+
+    "facial_and_skincare" : "フェイシャル＆スキンケア",
+    "facial_and_skincare_detail" : "ココロは、効果的でリラックスできるサービス体験のひとときをお届けしたいと考えています。",
 
     "end" : ""
 }
