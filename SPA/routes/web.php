@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ClientController;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -84,10 +85,7 @@ Route::get('/access', function () {
     return view('layout_client.access');
 });
 
-Route::get('/appointment', function () {
-    $users = User::where('status', 0)->get();
-    return view('layout_client.appointment', compact('users'));
-});
+Route::get('/appointment', [ClientController::class, 'appointment'])->name('appointment');
 
 Route::get('/booking', function () {
     return view('layout_client.appointment');

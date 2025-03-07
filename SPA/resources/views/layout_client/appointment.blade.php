@@ -82,12 +82,13 @@
         .section_popup {
             top: 50%;
             left: 50%;
-            margin-top: 21px;
-            width: 449px;
+            width: 95%;
             overflow: auto;
-            height: auto;
-            max-height: 80vh;
+            margin: 0 auto;
             position: fixed;
+            margin-top: 21px;
+            max-width: 450px;
+            max-height: 80vh;
             border-radius: 5px;
             background-color: #f1f1f1;
             transform: translate(-50%, -50%);
@@ -221,6 +222,19 @@
                                         </select>
                                     </div>
                                 </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>{{__('staff')}}</label>
+                                        <select data-rel="select2" class="form-control" name="staff_id" style="width: 100%;">
+                                            <option value="">---</option>
+                                            @foreach ($staffList as $item)
+                                                <option value="{{ $item['id'] }}">{{ $item['fullname'] }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="col-sm-12">
                                     <h5 class="mt-2"><label>{{__('date')}} <span class="text-danger">*</span></label></h5>
                                     <div id="apt_date_time_box">
@@ -381,13 +395,15 @@
     @endphp
     @section('scripts')
         <script>
+
+            var user_token = @json($token);
+            var staffList = @json($staffList);
             var response_title = @json(__('layout_popup_title'));
             var customer_info = @json(__('customer_info'));
             var full_name = @json(__('full_name'));
             var phone = @json(__('phone'));
             var email = @json(__('email'));
-
-            console.log(customer_info);
+            var staff = @json(__('staff'));
 
             var appointment_info = @json(__('appointment_info'));
             var appointment_time = @json(__('appointment_time'));
@@ -442,7 +458,6 @@
 
                 $('[data-rel="select2"]').select2();
 
-
                 // submit form
                 $("#submit_form").click(function() {
                     $('.booking-form').append(`<div class="icon-loadding"><div class="loadding-animation"></div></div>`);
@@ -486,35 +501,41 @@
                         status : "5",
                         date_time : data_time_format,
                         customer_old_new : "2",
+                        id: $("select[name='staff_id']").val(),
                         note : $("textarea[name='note']").val(),
                         fullname : $("input[name='fullname']").val(),
                         telephone: $("input[name='telephone']").val(),
                         service_groups: $("select[name='service_groups[]']").val(),
                     }
 
-
-                    fetch("https://daruma.idspa.vn/api/merchant/login/login", {
+                    fetch("https://daruma.idspa.vn/api/manager/appointment/aptForm", {
                         method: "POST",
                         headers: {
                             "IDSPA_KEY": "idspa_key_api",
+                            "USER-TOKEN": user_token,
                             "Content-Type": "application/x-www-form-urlencoded"
                         },
-                        body: new URLSearchParams({
-                            "email": "Quanly1@gmail.com",
-                            "password": "kokorospa123"
-                        })
+                        body: new URLSearchParams(dataForm)
                     })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.status == 'ok') {
-                            fetch("https://daruma.idspa.vn/api/manager/appointment/aptForm", {
-                                method: "POST",
+                    .then(respons1 => respons1.text())  // Đổi từ .json() thành .text()
+                    .then(text => {
+                        // Tìm vị trí JSON bắt đầu bằng { hoặc [
+                        const jsonStart = text.indexOf("{");
+                        if (jsonStart !== -1) {
+                            const jsonString = text.substring(jsonStart);  // Cắt phần JSON
+                            return JSON.parse(jsonString);  // Parse JSON
+                        }
+                        throw new Error("Không tìm thấy JSON hợp lệ trong response");
+                    })
+                    .then(data1 => {
+                        if (data1.status == 'ok') {
+                            fetch(`https://daruma.idspa.vn/api/manager/appointment/details/${data1.data}`, {
+                                method: "GET",
                                 headers: {
                                     "IDSPA_KEY": "idspa_key_api",
-                                    "USER-TOKEN": data.user_token,
+                                    "USER-TOKEN": user_token,
                                     "Content-Type": "application/x-www-form-urlencoded"
                                 },
-                                body: new URLSearchParams(dataForm)
                             })
                             .then(respons1 => respons1.text())  // Đổi từ .json() thành .text()
                             .then(text => {
@@ -526,114 +547,89 @@
                                 }
                                 throw new Error("Không tìm thấy JSON hợp lệ trong response");
                             })
-                            .then(data1 => {
-                                if (data1.status == 'ok') {
-                                    fetch(`https://daruma.idspa.vn/api/manager/appointment/details/${data1.data}`, {
-                                        method: "GET",
-                                        headers: {
-                                            "IDSPA_KEY": "idspa_key_api",
-                                            "USER-TOKEN": data.user_token,
-                                            "Content-Type": "application/x-www-form-urlencoded"
-                                        },
-                                    })
-                                    .then(respons1 => respons1.text())  // Đổi từ .json() thành .text()
-                                    .then(text => {
-                                        // Tìm vị trí JSON bắt đầu bằng { hoặc [
-                                        const jsonStart = text.indexOf("{");
-                                        if (jsonStart !== -1) {
-                                            const jsonString = text.substring(jsonStart);  // Cắt phần JSON
-                                            return JSON.parse(jsonString);  // Parse JSON
-                                        }
-                                        throw new Error("Không tìm thấy JSON hợp lệ trong response");
-                                    })
-                                    .then(data2 => {
-                                        console.log(data2);
-                                        $('.icon-loadding').remove();
+                            .then(data2 => {
+                                console.log(data2);
+                                $('.icon-loadding').remove();
 
-                                        let serviceList = data2?.data?.appointment_details?.service_arr?.map(service => service.service_name).join(", ") || "Không có dịch vụ";
+                                let serviceList = data2?.data?.appointment_details?.service_arr?.map(service => service.service_name).join(", ") || "";
 
 
-                                        $('.booking-form').append(`
-                                            <div class="wapper_popup">
-                                                <div class="section_popup">
-                                                    <div class="title_popup text-center">
-                                                        <h3>${response_title}</h3>
-                                                        <span id="countdown">15</span>
-                                                    </div>
-                                                    <div class="container_popup">
-                                                        <div class="p50 text-center">
-                                                            <h4>${customer_info}</h4>
-                                                            <h5>${full_name}: ${data2?.data?.appointment_details?.customer_name || ''}</h5>
-                                                            <h5>${phone}: ${data2?.data?.appointment_details?.booking_phone || ''}</h5>
-                                                            <h5>${email}: ${data2?.data?.appointment_details?.booking_email || ''}</h5>
-                                                        </div>
-                                                        <div class="p50 text-center">
-                                                            <h4>${appointment_info}</h4>
-                                                            <h5>${appointment_time}:${data2?.data?.appointment_details?.start || ''}</h5>
-                                                            <h5>${booking_code}: <span style="color: red;">${data2?.data?.appointment_details?.booking_code || ''}</span></h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="qr">
-                                                        <div id="qrcode"></div>
-                                                    </div>
-                                                    <div class="note_popup text-center">
-                                                        <h5><strong>${expected_service}</strong>:${serviceList}</h5>
-                                                        <h5>${note_popup}</h5>
-                                                    </div>
+                                const person = staffList.find(item => item.id == dataForm.id);
+                                let staffname =  person ? person.fullname : "";
 
-                                                    <div class="footer_popup text-center">
-                                                        <h4>${name_spa}</h4>
-                                                        <div>
-                                                            ${address}: ${address_detail}
-                                                        </div>
-                                                        <div>
-                                                            ${hot_line}: ${hot_line_number}
-                                                        </div>
-                                                    </div>
+                                $('.booking-form').append(`
+                                    <div class="wapper_popup">
+                                        <div class="section_popup">
+                                            <div class="title_popup text-center">
+                                                <h3>${response_title}</h3>
+                                                <span id="countdown">15</span>
+                                            </div>
+                                            <div class="container_popup">
+                                                <div class="p50 text-center">
+                                                    <h4>${customer_info}</h4>
+                                                    <h5>${full_name}: ${data2?.data?.appointment_details?.customer_name || ''}</h5>
+                                                    <h5>${phone}: ${data2?.data?.appointment_details?.booking_phone || ''}</h5>
+                                                    <h5>${email}: ${data2?.data?.appointment_details?.booking_email || ''}</h5>
+                                                </div>
+                                                <div class="p50 text-center">
+                                                    <h4>${appointment_info}</h4>
+                                                    <h5>${staff}:${staffname}</h5>
+                                                    <h5>${appointment_time}:${data2?.data?.appointment_details?.start || ''}</h5>
+                                                    <h5>${booking_code}: <span style="color: red;">${data2?.data?.appointment_details?.booking_code || ''}</span></h5>
                                                 </div>
                                             </div>
-                                        `);
+                                            <div class="qr">
+                                                <div id="qrcode"></div>
+                                            </div>
+                                            <div class="note_popup text-center">
+                                                <h5><strong>${expected_service}</strong>:${serviceList}</h5>
+                                                <h5>${note_popup}</h5>
+                                            </div>
 
-                                        var qr = new QRCode(document.getElementById("qrcode"), {
-                                            text: data2?.data?.appointment_details?.id || '',
-                                            width: 100,
-                                            height: 100,
-                                        });
+                                            <div class="footer_popup text-center">
+                                                <h4>${name_spa}</h4>
+                                                <div>
+                                                    ${address}: ${address_detail}
+                                                </div>
+                                                <div>
+                                                    ${hot_line}: ${hot_line_number}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `);
 
-                                        let timeLeft = 15;
-                                        let countdownInterval = setInterval(() => {
-                                            timeLeft--;
-                                            $('#countdown').text(timeLeft);
+                                var qr = new QRCode(document.getElementById("qrcode"), {
+                                    text: data2?.data?.appointment_details?.id || '',
+                                    width: 100,
+                                    height: 100,
+                                });
 
-                                            if (timeLeft <= 0) {
-                                                clearInterval(countdownInterval);
-                                                $('.icon-loadding').remove();
-                                                document.querySelector('.wapper_popup').remove();
-                                            }
-                                        }, 1000);
-                                    })
-                                    .catch(error2 => {
+                                let timeLeft = 15;
+                                let countdownInterval = setInterval(() => {
+                                    timeLeft--;
+                                    $('#countdown').text(timeLeft);
+
+                                    if (timeLeft <= 0) {
+                                        clearInterval(countdownInterval);
                                         $('.icon-loadding').remove();
-                                        console.error("Lỗi:", error2)
-                                        alert(error2);
-                                    });
-                                } else {
-                                    console.log("lỗi" , data1.message);
-                                }
+                                        document.querySelector('.wapper_popup').remove();
+                                    }
+                                }, 1000);
                             })
-                            .catch(error1 => {
+                            .catch(error2 => {
                                 $('.icon-loadding').remove();
-                                console.error("Lỗi:", error1)
-                                alert(error1);
+                                console.error("Lỗi:", error2)
+                                alert(error2);
                             });
                         } else {
-                            console.log("Đăng nhập thất bại!");
+                            console.log("lỗi" , data1.message);
                         }
                     })
-                    .catch(error => {
+                    .catch(error1 => {
                         $('.icon-loadding').remove();
-                        console.error("Lỗi:", error)
-                        alert(error);
+                        console.error("Lỗi:", error1)
+                        alert(error1);
                     });
                 });
             });
