@@ -409,32 +409,48 @@ p {
 }
 
 /* Đường viền đỏ chạy từ các góc */
-.image-container::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    width: 0;
-    height: 0;
-    border: none;
-    z-index: 2;
-    pointer-events: none;
-    -webkit-transition: all 450ms ease-in-out;
-    -moz-transition: all 450ms ease-in-out;
-    -o-transition: all 450ms ease-in-out;
-    -ms-transition: all 450ms ease-in-out;
+.image-container {
+    position: relative;
+    display: inline-block;
 }
 
-.image-container:hover::before {
+.image-container::before,
+.image-container::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 2px solid white;
+    transition: all 0.4s ease-in-out;
+    z-index: 2;
+}
+
+/* Góc trên trái và dưới phải */
+.image-container::before {
+    top: 10px;
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+    opacity: 1;
+}
+
+/* Góc trên phải và dưới trái */
+.image-container::after {
+    bottom: 10px;
+    right: 10px;
+    border-left: none;
+    border-top: none;
+    opacity: 1;
+}
+
+/* Hover effect */
+.image-container:hover::before,
+.image-container:hover::after {
     width: calc(100% - 20px);
     height: calc(100% - 20px);
-    border: 2px solid white;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    pointer-events: none;
+    opacity: 1;
 }
+
 
 /* Chữ xuất hiện khi hover */
 .image-container .hover-text {
