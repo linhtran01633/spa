@@ -44,8 +44,8 @@
   .phone-vr-circle-fill {
     width: 65px;
     height: 65px;
-    top: 12px;
-    left: 12px;
+    top: 10.5px;
+    left: 10.5px;
     position: absolute;
     box-shadow: 0 0 0 0 #c31d1d;
     background-color: rgba(230, 8, 8, 0.7);
@@ -66,8 +66,8 @@
     width: 40px;
     height: 40px;
     line-height: 40px;
-    top: 25px;
-    left: 25px;
+    top: 24.5px;
+    left: 24.5px;
     position: absolute;
     border-radius: 50%;
     overflow: hidden;
