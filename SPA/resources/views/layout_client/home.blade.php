@@ -128,7 +128,7 @@
                         <img src="/images/about_us/DSC00690.jpg" alt="Image 1">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/traditional-massage">{{__('menu.service.service1')}} </a></b></h3>
+                                <h3><b><a href="/services/1">{{__('menu.service.service1')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                         <img src="/images/slide/slide-2.jpg" alt="Image 2">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/acupressure-massage">{{__('menu.service.service2')}} </a></b></h3>
+                                <h3><b><a href="/services/2">{{__('menu.service.service2')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                         <img src="/images/about_us/DSC00722.jpg" alt="Image 3">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/thai-massage">{{__('menu.service.service3')}} </a></b></h3>
+                                <h3><b><a href="/services/3">{{__('menu.service.service3')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -155,7 +155,7 @@
                         <img src="/images/slide/slide-2.jpg" alt="Image 4">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/neck-and-shoulder-therapy">{{__('menu.service.service4')}} </a></b></h3>
+                                <h3><b><a href="/services/4">{{__('menu.service.service4')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                         <img src="/images/about_us/DSC00708.jpg" alt="Image 5">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/foot-massage">{{__('menu.service.service5')}} </a></b></h3>
+                                <h3><b><a href="/services/5">{{__('menu.service.service5')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                         <img src="/images/slide/slide-2.jpg" alt="Image 6">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/healthy-shampoo">{{__('menu.service.service6')}} </a></b></h3>
+                                <h3><b><a href="/services/6">{{__('menu.service.service6')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -182,7 +182,7 @@
                         <img src="/images/slide/slide-2.jpg" alt="Image 7">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/facial">{{__('menu.service.service7')}} </a></b></h3>
+                                <h3><b><a href="/services/7">{{__('menu.service.service7')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                         <img src="/images/about_us/DSC00755.jpg" alt="Image 8">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/other-services">{{__('menu.service.service8')}} </a></b></h3>
+                                <h3><b><a href="/services/8">{{__('menu.service.service8')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -200,7 +200,7 @@
                         <img src="/images/about_us/DSC00716.jpg" alt="Image 9">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/vip-room">{{__('menu.service.service9')}} </a></b></h3>
+                                <h3><b><a href="/services/9">{{__('menu.service.service9')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                         <img src="/images/slide/slide-2.jpg" alt="Image 10">
                         <div class="hover-text">
                             <div class="image-data">
-                                <h3><b><a href="/combo">{{__('menu.service.service10')}} </a></b></h3>
+                                <h3><b><a href="/services/10">{{__('menu.service.service10')}} </a></b></h3>
                                 <h5> {{__('name_spa')}} </h5>
                             </div>
                         </div>
@@ -233,8 +233,18 @@
         <div class="container" style="padding: 0px">
             <div class="col-left-open">
                 <div class="working-hours-text">
-                    <h2> <b>Giờ mở cửa:</b> </h2>
-                    <h4>10:00 - 22:00 hằng ngày</h4>
+                    <div class="cbox-1 mb-25">
+                        <h4 class="h5-xs txt-color-01 font-bold"> {{__('access.contact')}} </h4>
+                        <p class="txt-color-05"><span> {{__('access.contact.phone')}} </span> {{__('access.contact.phone.comment')}} </p>
+                        <p class="txt-color-05"><span> {{__('access.contact.email')}} </span> {{__('access.contact.email.comment')}} </p>
+                    </div>
+
+                    <div class="cbox-1">
+                        <h4 class="h5-xs txt-color-01 font-bold"> {{__('access.working_hours')}} </h4>
+                        <p class="txt-color-05"><span> {{__('access.working_hours.everyday')}} </span> {{__('access.working_hours.everyday.comment')}} </p>
+                        <p class="txt-color-05"><span> {{__('access.working_hours.last_entry')}} </span> {{__('access.working_hours.last_entry.comment')}} </p>
+                        <p class="txt-color-05"> {{__('access.working_hours.note')}} </p>
+                    </div>
                 </div>
                 <div class="working-hours-img">
                     <img class="img-fluid" src="/images/slide/slide-2.jpg" alt="about-image">

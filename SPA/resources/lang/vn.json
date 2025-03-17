@@ -3,16 +3,181 @@
     "menu" : "Menu",
     "menu.home" : "TRANG CHỦ",
     "menu.service" : "DỊCH VỤ",
-    "menu.service.service1" : "Massage truyền thống nhật bản",
-    "menu.service.service2" : "Massage bấm huyệt nhật bản",
-    "menu.service.service3" : "Massage thái",
-    "menu.service.service4" : "Trị liệu cổ vai gáy",
-    "menu.service.service5" : "Massage Chân",
-    "menu.service.service6" : "Gội đầu dưỡng sinh",
-    "menu.service.service7" : "Chăm sóc da cơ bản",
-    "menu.service.service8" : "Dịch vụ bổ sung",
-    "menu.service.service9" : "Phòng vip",
-    "menu.service.service10" : "Combo",
+
+    "menu.service.service1" : "MASSAGE TRUYỀN THỐNG NHẬT BẢN (THƯ GIÃN TOÀN THÂN)",
+    "service1.item1.name" : "60 PHÚT (KHÔNG KÈM ĐÁ NÓNG)",
+    "service1.item1.comment" : "(vai, cổ, chân trước, tay, đầu)",
+    "service1.item1.price" : "398,000 VND",
+
+    "service1.item2.name" : "90 PHÚT (CÓ ĐÁ NÓNG)",
+    "service1.item2.comment" : "(full body)",
+    "service1.item2.price" : "528,000 VND",
+
+    "service1.item3.name" : "120 PHÚT (CÓ ĐÁ NÓNG)",
+    "service1.item3.comment" : "(full body)",
+    "service1.item3.price" : "678,000 VND",
+
+    "service1.item4.name" : "ĐÁ NÓNG",
+    "service1.item4.comment" : " ",
+    "service1.item4.price" : "48,000 VND",
+
+    "service1.item5.name" : "MẶT NẠ GỪNG",
+    "service1.item5.comment" : " ",
+    "service1.item5.price" : "99,000 VND",
+
+    "service1.item6.name" : "TINH DẦU AROMA",
+    "service1.item6.comment" : " ",
+    "service1.item6.price" : "78,000 VND",
+
+
+    "menu.service.service2" : "MASSAGE BẤM HUYỆT NHẬT BẢN",
+
+    "service2.item1.name" : "90 PHÚT",
+    "service2.item1.comment" : " ",
+    "service2.item1.price" : "578,000 VND",
+
+    "service2.item2.name" : "120 PHÚT",
+    "service2.item2.comment" : " ",
+    "service2.item2.price" : "778,000 VND",
+
+    "menu.service.service3" : "MASSAGE THÁI (CĂNG GIÃN CƠ, ẤN HUYỆT KHÔNG DẦU)",
+
+    "service3.item1.name" : "75 PHÚT",
+    "service3.item1.comment" : " ",
+    "service3.item1.price" : "488,000 VND",
+
+    "service3.item2.name" : "90 PHÚT",
+    "service3.item2.comment" : " ",
+    "service3.item2.price" : "568,000 VND",
+
+
+    "menu.service.service4" : "TRỊ LIỆU CỔ VAI GÁY",
+
+    "service4.item1.name" : "60 PHÚT",
+    "service4.item1.comment" : " ",
+    "service4.item1.price" : "398,000 VND",
+
+    "service4.item2.name" : "90 PHÚT",
+    "service4.item2.comment" : " ",
+    "service4.item2.price" : "528,000 VND",
+
+
+    "menu.service.service5" : "MASSAGE CHÂN",
+
+    "service5.item1.name" : "60 PHÚT",
+    "service5.item1.comment" : " ",
+    "service5.item1.price" : "338,000 VND",
+
+    "service5.item2.name" : "90 PHÚT",
+    "service5.item2.comment" : " ",
+    "service5.item2.price" : "488,000 VND",
+
+    "menu.service.service6" : "GỘI ĐẦU DƯỠNG SINH",
+
+    "service6.item1.name" : "GỘI ĐẦU THƯ GIÃN MASSAGE CỔ VAI GÁY 60 PHÚT",
+    "service6.item1.comment" : "(MASSAGE CỔ VAI GÁY 30 PHÚT, GỘI 2 LẦN XẢ, SẤY, DƯỠNG TÓC)",
+    "service6.item1.price" : "368,000 VND",
+
+    "service6.item2.name" : "GỘI ĐẦU KOKORO SPA (HAIR TREATMENT) 90 PHÚT",
+    "service6.item2.comment" : "(MASSAGE CỔ VAI GÁY 30P, CHĂM SÓC DA CƠ BẢN 30P, GỘI 2 LẦN XẢ, SẤY, DƯỠNG TÓC)",
+    "service6.item2.price" : "488,000 VND",
+
+    "service6.item3.name" : "GỘI SẠCH 30 PHÚT",
+    "service6.item3.comment" : "(MASSAGE ĐẦU THƯ GIÃN, GỘI 2 LẦN, XẢ, SẤY, DƯỠNG TÓC) => CHỈ SỬ DỤNG VỚI COMBO",
+    "service6.item3.price" : "88,000 VND",
+
+    "service6.item4.name" : "ĐẮP MẶT NẠ (BAO GỒM TẨY TẾ BÀO CHẾT)",
+    "service6.item4.comment" : " ",
+    "service6.item4.price" : "88,000 VND",
+
+    "service6.item5.name" : "GIẢM STRESS 15 PHÚT",
+    "service6.item5.comment" : " ",
+    "service6.item5.price" : "88,000 VND",
+
+
+    "menu.service.service7" : "CHĂM SÓC DA CƠ BẢN",
+
+    "service7.item1.name" : "45 PHÚT",
+    "service7.item1.comment" : "(TẨY TRANG, TẨY TẾ BÀO CHẾT, RỬA MẶT, MASSAGE NÂNG CƠ DƯỠNG SINH 25 PHÚT, ĐẮP MẶT NẠ, MASSAGE ĐẦU, TONER, KEM DƯỠNG, KEM CHỐNG NẮNG)",
+    "service7.item1.price" : "318,000 VND",
+
+    "service7.item2.name" : "75 PHÚT",
+    "service7.item2.comment" : "(TẨY TRANG, TẨY TẾ BÀO CHẾT, RỬA MẶT, MASSAGE NÂNG CƠ DƯỠNG SINH 40 PHÚT, ĐẮP MẶT NẠ, MASSAGE ĐẦU, TONER, KEM DƯỠNG, KEM CHỐNG NẮNG)",
+    "service7.item2.price" : "518,000 VND",
+
+    "service7.item3.name" : "DỊCH VỤ XÔNG HƠI (BAO GỒM TẮM)",
+    "service7.item3.comment" : " ",
+    "service7.item3.price" : "88,000 VND",
+
+    "service7.item4.name" : "TẮM SẠCH",
+    "service7.item4.comment" : " ",
+    "service7.item4.price" : "68,000 VND",
+
+
+    "menu.service.service8" : "PHÒNG VIP",
+
+    "service8.item1.name" : "1 NGƯỜI",
+    "service8.item1.comment" : " ",
+    "service8.item1.price" : "88,000 VND",
+
+    "service8.item2.name" : "2 NGƯỜI",
+    "service8.item2.comment" : " ",
+    "service8.item2.price" : "160,000 VND",
+
+
+    "menu.service.service9" : "KOKORO COMBO THƯ GIÃN TOÀN DIỆN",
+
+    "service9.item1.name" : "TOTAL RELAXATION COMBO 150 PHÚT",
+    "service9.item1.comment" : "(BODY 75 PHÚT + FACIAL 45 PHÚT + HEAD SPA 30 PHÚT)",
+    "service9.item1.price" : "999,000 VND",
+
+    "service9.item2.name" : "MIGAO COMBO",
+    "service9.item2.comment" : "(BODY 60 PHÚT + CUP FACIAL 45 PHÚT)",
+    "service9.item2.price" : "696,000 VND",
+
+    "service9.item3.name" : "BODY HEAD (BODY 60 PHÚT + HEAD SPA 45 PHÚT)",
+    "service9.item3.comment" : " ",
+    "service9.item3.price" : "676,000 VND",
+
+    "service9.item4.name" : "ATAMA RAKU (GỘI 90 PHÚT + FOOT 30 PHÚT)",
+    "service9.item4.comment" : " ",
+    "service9.item4.price" : "668,000 VND",
+
+    "service9.item5.name" : "SERAPY COMBO",
+    "service9.item5.comment" : "(PAIN 90 PHÚT + ĐÁ NÓNG + MẶT NẠ GỪNG)",
+    "service9.item5.price" : "618,000 VND",
+
+    "service9.item6.name" : "SAKURA COMBO",
+    "service9.item6.comment" : "(SHIATSU 90 PHÚT + LYMP FACIAL 45 PHÚT)",
+    "service9.item6.price" : "999,000 VND",
+
+
+    "menu.service.service10" : "DỊCH VỤ NGẮN",
+
+    "service10.item1.name" : "MÁT XA TOÀN THÂN & CỔ VAI GÁY",
+    "service10.item1.comment" : " ",
+    "service10.item1.price" : " ",
+
+    "service10.item2.name" : "TRỊ LIỆU CỔ VAI GÁY 30 PHÚT",
+    "service10.item2.comment" : " ",
+    "service10.item2.price" : "198,000 VND",
+
+    "service10.item3.name" : "TRỊ LIỆU CỔ VAI GÁY HOẶC TOÀN THÂN 45 PHÚT",
+    "service10.item3.comment" : " ",
+    "service10.item3.price" : "298,000 VND",
+
+    "service10.item4.name" : "MASSAGE CHÂN",
+    "service10.item4.comment" : " ",
+    "service10.item4.price" : " ",
+
+    "service10.item5.name" : "MASSAGE CHÂN 30 PHÚT",
+    "service10.item5.comment" : " ",
+    "service10.item5.price" : "168,000 VND",
+
+    "service10.item6.name" : "MASSAGE CHÂN 45 PHÚT",
+    "service10.item6.comment" : " ",
+    "service10.item6.price" : "248,000 VND",
+
     "menu.promotion" : "KHUYẾN MÃI",
     "menu.recruitment" : "TUYỂN DỤNG",
     "menu.access" : "TRUY CẬP",
@@ -76,114 +241,6 @@
     "note7": "* Đối với những khách hàng trên, vui lòng cho chúng tôi biết quý khách muốn sử dụng phòng VIP khi đặt phòng. Phòng VIP của chúng tôi có giới hạn.",
     "note8": "Xin lưu ý rằng chúng tôi có thể không đáp ứng được yêu cầu đặt trước của bạn, vì chúng tôi sẽ trả lời trên cơ sở ai đến trước được phục vụ trước.",
 
-    "traditional_massage.service1" : "60 phút (không kèm đá nóng)",
-    "traditional_massage.comment1" : "(vai, cổ, chân trước, tay, đầu)",
-    "traditional_massage.price1" : "499,000 VND ",
-
-    "traditional_massage.service2" : "90 phút (có đá nóng)",
-    "traditional_massage.comment2" : "(full body)",
-    "traditional_massage.price2" : "699,000 VND ",
-
-    "traditional_massage.service3" : "120 phút (có đá nóng)",
-    "traditional_massage.comment3" : "(full body)",
-    "traditional_massage.price3" : "899,000 VND ",
-
-    "traditional_massage.service4" : "Đá nóng",
-    "traditional_massage.comment4" : " ",
-    "traditional_massage.price4" : "69,000 VND",
-
-    "traditional_massage.service5" : "Mặt nạ gừng",
-    "traditional_massage.comment5" : " ",
-    "traditional_massage.price5" : "99,000 VND",
-
-    "traditional_massage.service6" : "Tinh dầu Aroma",
-    "traditional_massage.comment6" : "(chọn 1 trong 5 loại)",
-    "traditional_massage.price6" : "99,000 VND",
-
-    "acupressure_massage.service1" : "75 phút",
-    "acupressure_massage.comment1" : " ",
-    "acupressure_massage.price1" : "699,000 VND",
-
-    "acupressure_massage.service2" : "120 phút",
-    "acupressure_massage.comment2" : " ",
-    "acupressure_massage.price2" : "899,000 VND",
-
-    "thai_massage.service1" : "75 phút",
-    "thai_massage.comment1" : " ",
-    "thai_massage.price1" : "699,000 VND",
-
-    "thai_massage.service2" : "90 phút",
-    "thai_massage.comment2" : " ",
-    "thai_massage.price2" : "799,000 VND",
-
-    "neck_and_shoulder_therapy.service1" : "60 phút",
-    "neck_and_shoulder_therapy.comment1" : " ",
-    "neck_and_shoulder_therapy.price1" : "449,000 VND",
-
-    "neck_and_shoulder_therapy.service2" : "90 phút",
-    "neck_and_shoulder_therapy.comment2" : " ",
-    "neck_and_shoulder_therapy.price2" : "699,000 VND",
-
-    "foot_massage.service1" : "60 phút",
-    "foot_massage.comment1" : " ",
-    "foot_massage.price1" : "449,000 VND",
-
-    "foot_massage.service2" : "90 phút",
-    "foot_massage.comment2" : " ",
-    "foot_massage.price2" : "649,000 VND",
-
-    "healthy_shampoo.service1" : "Gội sạch 30 phút",
-    "healthy_shampoo.comment1" : "gội 2 lần, xả, sấy, dưỡng tóc (chỉ sử dụng với combo)",
-    "healthy_shampoo.price1" : "99,000 VND ",
-
-    "healthy_shampoo.service2" : "Gội đầu thư giãn massage cổ vai gáy 45 phút",
-    "healthy_shampoo.comment2" : "massage cổ vai gáy 15p, gội 2 lần xả, sấy, dưỡng tóc",
-    "healthy_shampoo.price2" : "299,000 VND ",
-
-    "healthy_shampoo.service3" : "Gội đầu Kokoro spa (hair treatment) 90 phút",
-    "healthy_shampoo.comment3" : "massage cổ vai gáy 30p, chăm sóc da cơ bản 30p, gội 2 lần xả, sấy, dưỡng tóc",
-    "healthy_shampoo.price3" : "599,000 VND ",
-
-    "healthy_shampoo.service4" : "Đắp mặt nạ",
-    "healthy_shampoo.comment4" : "bao gồm tẩy tế bào chết",
-    "healthy_shampoo.price4" : "99,000 VND",
-
-    "healthy_shampoo.service5" : "Giảm stress 15 phút",
-    "healthy_shampoo.comment5" : " ",
-    "healthy_shampoo.price5" : "99,000 VND",
-
-    "facial.service1" : "45 phút",
-    "facial.comment1" : "tẩy trang, tẩy tế bào chết, rửa mặt, massage nâng cơ dưỡng sinh 25 phút, đắp nạ, massage đầu, toner, kem dưỡng, kem chống nắng",
-    "facial.price1" : "349,000 VND",
-
-    "facial.service2" : "75 phút",
-    "facial.comment2" : "tẩy trang, tẩy tế bào chết, rửa mặt, massage nâng cơ dưỡng sinh 40 phút, đắp nạ, massage đầu, toner, kem dưỡng, kem chống nắng",
-    "facial.price2" : "649,000 VND",
-
-    "other_services.service1" : "Dịch vụ xông hơi",
-    "other_services.comment1" : " ",
-    "other_services.price1" : "99,000 VND",
-
-    "other_services.service2" : "Tắm sạch",
-    "other_services.comment2" : " ",
-    "other_services.price2" : "99,000 VND",
-
-    "vip_room.service1" : "1 người",
-    "vip_room.comment1" : " ",
-    "vip_room.price1" : "99,000 VND",
-
-    "vip_room.service2" : "2 người",
-    "vip_room.comment2" : " ",
-    "vip_room.price2" : "190,000 VND",
-
-    "combo.service1" : "Relaxing Combo",
-    "combo.comment1" : "Body 60 phút + Facial 45 phút = 105’",
-    "combo.price1" : "819,000 VND",
-
-    "combo.service2" : "Total relaxation Combo",
-    "combo.comment2" : "Body 75 phút + Facial 45 phút + Gội 30 phút = 150’",
-    "combo.price2" : "1,059,000 VND",
-
     "access.detail" : "Thông tin chi tiết",
     "access.detail.comment" : "SPA chúng tôi nằm ngay trên trục đường chính Hai Bà Trưng.",
 
@@ -194,7 +251,7 @@
     "access.contact.phone" : "Điện thoại : ",
     "access.contact.email" : "Email : ",
     "access.contact.phone.comment" : "086 500 8868",
-    "access.contact.email.comment" : "kokorospaservice@gmail.com",
+    "access.contact.email.comment" : "kokorospaservices@gmail.com",
 
     "access.working_hours" : "Giờ làm việc",
     "access.working_hours.everyday" : "Hàng ngày",

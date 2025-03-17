@@ -323,15 +323,15 @@ p {
 }
 
 .working-hours-text{
-    background-color: #f2ebc3f0;
-    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 35%;
     z-index: 2;
-    top: 20%;
-    height: 50%;
-    left: 15%;
-    width: 30%;
     padding: 30px;
     color: white;
+    position: absolute;
+    background-color: #f2ebc3f0;
+    transform: translate(-50%, -50%);
 }
 
 .font-bold {
@@ -369,6 +369,10 @@ p {
     grid-gap: 10px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.pr-4 {
+    padding-right: 2rem !important;
 }
 
 @media (max-width: 480px) {

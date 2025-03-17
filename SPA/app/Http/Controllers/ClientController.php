@@ -102,4 +102,35 @@ class ClientController extends Controller
             throw new Exception("Yêu cầu lấy danh sách nhân viên thất bại!");
         }
     }
+
+
+    // services
+    public function services($id)
+    {
+        $countItem = 0;
+        $listService = [];
+        $serviceName = __('menu.service.service'. $id);
+
+        if($id == 1) $countItem = 6;
+        else if($id == 2) $countItem = 2;
+        else if($id == 3) $countItem = 2;
+        else if($id == 4) $countItem = 2;
+        else if($id == 5) $countItem = 2;
+        else if($id == 6) $countItem = 5;
+        else if($id == 7) $countItem = 4;
+        else if($id == 8) $countItem = 2;
+        else if($id == 9) $countItem = 6;
+        else if($id == 10) $countItem = 6;
+
+        for($i = 1; $i <= $countItem; $i++) {
+            $listService[] = [
+                'name' => __('service' . $id . '.item' . $i . '.name'),
+                'price' => __('service' . $id . '.item' . $i . '.price'),
+                'description' => __('service' . $id . '.item' . $i . '.comment'),
+            ];
+
+        }
+
+        return view('layout_client.services', compact('listService', 'serviceName'));
+    }
 }

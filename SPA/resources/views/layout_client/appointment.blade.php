@@ -345,7 +345,7 @@
                                                 <option value="66">{{__('services.value66')}}</option>
                                                 <option value="65">{{__('services.value65')}}</option>
                                             </optgroup>
-                                            <optgroup label="{{__('services.6')}}">
+                                            <optgroup label="{{__('services.optgroup6')}}">
                                                 <option value="63">{{__('services.value63')}}</option>
                                                 <option value="62">{{__('services.value62')}}</option>
                                                 <option value="61">{{__('services.value61')}}</option>
