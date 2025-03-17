@@ -30,7 +30,7 @@
     "service1.item6.comment" : " ",
     "service1.item6.price" : "78,000 VND",
 
-    "menu.service.service2" : "SHIATSU MASSAGE",
+    "menu.service.service2" : "指圧マッサージ",
 
     "service2.item1.name" : "90分",
     "service2.item1.comment" : " ",
@@ -40,7 +40,7 @@
     "service2.item2.comment" : " ",
     "service2.item2.price" : "778,000 VND",
 
-    "menu.service.service3" : "THAI MASSAGE (MUSCLE STRETCHING, ACUPRESSURE WITHOUT OIL)",
+    "menu.service.service3" : "タイ古式マッサージ（筋肉ストレッチ、オイルを使わない指圧）",
 
     "service3.item1.name" : "75MIN",
     "service3.item1.comment" : " ",
@@ -124,7 +124,7 @@
     "service8.item2.price" : "160,000 VND",
 
 
-    "menu.service.service9" : "KOKORO COMBO THƯ GIÃN TOÀN DIỆN",
+    "menu.service.service9" : "ココロスパコリラクゼーションコンボ",
 
     "service9.item1.name" : "(ボディマッサージ75分 + フェイシャル45分 + ヘッドスパ30分)",
     "service9.item1.comment" : " ",
